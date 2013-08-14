@@ -1,0 +1,75 @@
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile}{\section{souvenir.\-student.\-models.\-Profile Class Reference}
+\label{classsouvenir_1_1student_1_1models_1_1Profile}\index{souvenir.\-student.\-models.\-Profile@{souvenir.\-student.\-models.\-Profile}}
+}
+Inheritance diagram for souvenir.\-student.\-models.\-Profile\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classsouvenir_1_1student_1_1models_1_1Profile}
+\end{center}
+\end{figure}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a39e76d5aa4b2709162e8c254e5f6801b}{tuple {\bfseries firstname} = models.\-Char\-Field(max\-\_\-length=255)}\label{classsouvenir_1_1student_1_1models_1_1Profile_a39e76d5aa4b2709162e8c254e5f6801b}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_adca2f69a7534f6f48c1c1977db9c31d2}{tuple {\bfseries middlename} = models.\-Char\-Field(max\-\_\-length=255,blank=True )}\label{classsouvenir_1_1student_1_1models_1_1Profile_adca2f69a7534f6f48c1c1977db9c31d2}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_af29345b14b2f7043189e29cd15c560cd}{tuple {\bfseries lastname} = models.\-Char\-Field(max\-\_\-length=255, blank=True)}\label{classsouvenir_1_1student_1_1models_1_1Profile_af29345b14b2f7043189e29cd15c560cd}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a8e5e8b84363bc6e2d81c32c39d6e3119}{tuple {\bfseries gender} = models.\-Char\-Field(max\-\_\-length=1, choices=G\-E\-N\-D\-E\-R\-\_\-\-C\-H\-O\-I\-C\-E\-S)}\label{classsouvenir_1_1student_1_1models_1_1Profile_a8e5e8b84363bc6e2d81c32c39d6e3119}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a4d3e68863b165fc57f89caf4a7a55d44}{tuple {\bfseries course} = models.\-Char\-Field(max\-\_\-length=15, choices=C\-O\-U\-S\-R\-E\-\_\-\-C\-H\-O\-I\-C\-E\-S)}\label{classsouvenir_1_1student_1_1models_1_1Profile_a4d3e68863b165fc57f89caf4a7a55d44}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a9ccf435a095d263b72e565d30c9d7460}{tuple {\bfseries branch} = models.\-Char\-Field(max\-\_\-length=50,help\-\_\-text=\char`\"{}(only for B.\-Tech Students)\char`\"{}, choices=B\-R\-A\-N\-C\-H\-\_\-\-C\-H\-O\-I\-C\-E\-S, blank=True)}\label{classsouvenir_1_1student_1_1models_1_1Profile_a9ccf435a095d263b72e565d30c9d7460}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a8cd7827aa9184688add7b23670f65486}{tuple {\bfseries class\-\_\-roll\-\_\-no} = models.\-Integer\-Field(null=True)}\label{classsouvenir_1_1student_1_1models_1_1Profile_a8cd7827aa9184688add7b23670f65486}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a9d2e137af325786eaf30e18769070c45}{tuple {\bfseries photo} = models.\-Image\-Field(upload\-\_\-to = 'files' ,help\-\_\-text=\char`\"{}(Only use Passport Size photo)\char`\"{})}\label{classsouvenir_1_1student_1_1models_1_1Profile_a9d2e137af325786eaf30e18769070c45}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a47f5441862c3ae2d1c2a296b4533fe4e}{tuple {\bfseries father\-\_\-name} = models.\-Char\-Field(max\-\_\-length=100)}\label{classsouvenir_1_1student_1_1models_1_1Profile_a47f5441862c3ae2d1c2a296b4533fe4e}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a83c9dc9685ec6298bea2f8d324c00dff}{tuple {\bfseries mother\-\_\-name} = models.\-Char\-Field(max\-\_\-length=100)}\label{classsouvenir_1_1student_1_1models_1_1Profile_a83c9dc9685ec6298bea2f8d324c00dff}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a8bbeaa08370dc996e4d94278e67bcaf9}{tuple {\bfseries birthdate} = models.\-Date\-Field(default=datetime.\-date.\-today())}\label{classsouvenir_1_1student_1_1models_1_1Profile_a8bbeaa08370dc996e4d94278e67bcaf9}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_ac3488fa469a88396f201120398de7305}{tuple {\bfseries address\-\_\-1} = models.\-Char\-Field(max\-\_\-length=255, )}\label{classsouvenir_1_1student_1_1models_1_1Profile_ac3488fa469a88396f201120398de7305}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a30775c5cb25c1a83cb98e946f5003627}{tuple {\bfseries address\-\_\-2} = models.\-Char\-Field(max\-\_\-length=255, blank=True )}\label{classsouvenir_1_1student_1_1models_1_1Profile_a30775c5cb25c1a83cb98e946f5003627}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_af59764ef4ccf29d1905c64f21a68f8e2}{tuple {\bfseries city} = models.\-Char\-Field(max\-\_\-length=255)}\label{classsouvenir_1_1student_1_1models_1_1Profile_af59764ef4ccf29d1905c64f21a68f8e2}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_aa39276118e6962dbf3543dfad7785970}{tuple {\bfseries pin\-\_\-code} = models.\-Integer\-Field(null=True)}\label{classsouvenir_1_1student_1_1models_1_1Profile_aa39276118e6962dbf3543dfad7785970}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_adc48553ff2f6683deb7e53919bcbbaa3}{tuple {\bfseries state} = models.\-Char\-Field(max\-\_\-length=30, choices=S\-T\-A\-T\-E\-S\-\_\-\-C\-H\-O\-I\-C\-E\-S, default='Punjab')}\label{classsouvenir_1_1student_1_1models_1_1Profile_adc48553ff2f6683deb7e53919bcbbaa3}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a3c495abe5a1ab3d76a421e1348417e1e}{tuple {\bfseries email} = models.\-Email\-Field()}\label{classsouvenir_1_1student_1_1models_1_1Profile_a3c495abe5a1ab3d76a421e1348417e1e}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a303290799bc6dc7e98dddc9be8eac65e}{tuple {\bfseries contact\-\_\-no} = models.\-Char\-Field(max\-\_\-length=25)}\label{classsouvenir_1_1student_1_1models_1_1Profile_a303290799bc6dc7e98dddc9be8eac65e}
+
+\item 
+\hypertarget{classsouvenir_1_1student_1_1models_1_1Profile_a29d21e67add979325d912f83949c3339}{tuple {\bfseries comments} = models.\-Text\-Field()}\label{classsouvenir_1_1student_1_1models_1_1Profile_a29d21e67add979325d912f83949c3339}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+student/models.\-py\end{DoxyCompactItemize}
