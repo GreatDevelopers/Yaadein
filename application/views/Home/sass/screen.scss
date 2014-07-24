@@ -1,0 +1,517 @@
+/* Welcome to Compass.
+/ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,300);
+
+/***** Mixins ******/
+
+@mixin breakpoint($point) {
+    @if $point == small {
+        @media  only screen
+            and (max-width: 600px)  { @content; }
+}
+@else if $point == medium {
+    @media only screen
+        and (max-width: 820px) { @content; }
+}
+@else if $point == larger {
+    @media only screen
+        and (max-width: 1100px)  { @content; }
+  }
+}
+
+/***** Colors *******/
+
+$black:#222;
+$lessblack:#333;
+$lesserblack:#444;
+$darkblue: #0099FF;
+$blue:#52ADDA;
+$lessblue:#68B8DF;
+$grey:#C9C9C9;
+$lessgrey:#DBDBDB;
+$white:#fafafa;
+$darkpink:#cb2c54;
+$pink:#d42a5c;
+$lesserpink:#ec4c64;
+$pink1:#FF0040;
+$redpink: #E96D63;
+
+
+/***** Color-Ends *****/
+
+
+/***************** SASSY BEGINS ***************/
+
+a{
+    text-decoration:none;
+    color:white;
+    &:hover{@include single-text-shadow(1px,1px);}
+}
+
+html
+{
+    font-size:62.5%;
+}
+
+body
+{
+    font-family:'Open Sans', sans-serif;
+    font-size:1.6rem;
+    @include breakpoint(small){overflow-x:hidden;}
+}
+
+*:focus {
+    outline: 0;
+}
+
+::selection
+{
+    background-color: $black;
+    color:$white;
+}
+
+::-moz-selection
+{
+    background-color: $black;
+    color:$white;
+}
+
+/***** Container ****/
+
+.container {
+    min-height:595px;
+
+}
+
+/***** Header *****/
+
+.head {
+    background:$black;
+    width:100%;
+    min-height:50px;
+    top:0;
+    z-index:1100;
+    position:absolute;
+    box-shadow: 0px 2px 3px $lessblack;
+    @include breakpoint(small) { position:absolute;}
+    @include single-box-shadow($lessblack,0px,2px,3px);
+}
+
+/**** Header End *****/
+
+.navbar {
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    .unlist {
+        li {
+            float:left;
+            width:18.5%;
+            text-align:center;
+            line-height:50px;
+            font-size:1.6rem;
+            border-bottom:2px solid $black;
+            &:hover{border-bottom:2px solid $blue;}
+            @include breakpoint(large) {font-size:1.4rem; float:right; width:136px;}
+            @include breakpoint(medium) {font-size:1.3rem; width:33%;}
+            @include breakpoint(small) {display:none;}
+        }
+    }
+}
+
+.bt-menu {
+    font-size:1.6rem;
+    line-height:50px;
+    display:none;
+    border:none;
+    @include breakpoint(small){display:block;}
+} 
+
+.icons {
+    width:16px;
+}
+
+.video-triangle {
+    z-index:-1000;
+    top: 0;
+    left: 0;  
+    width:auto;
+    height:auto;
+    position: fixed;
+    @include breakpoint(small) {width: auto; height: auto;}
+    @include breakpoint(medium) {width: auto; height:auto;}
+    @include breakpoint(large) {width: auto; height:auto;}
+}
+
+
+/***** SLIDES GOES FROM HERE *****/
+
+/**************** SLIDE 1 ******************/
+
+.slide1 {
+    height:100%;
+    border-bottom:1px dashed $black;
+    @include breakpoint(small){background-image:url(tasveer/black.jpg); width: 100%; height:100%;}
+    @include breakpoint(medium){background-image:url(tasveer/black.jpg); width: 100%; height:100%;}
+    .s1sec {
+        display: block;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        opacity:0.90;
+    }   
+    $grad1:linear-gradient(to bottom, #40F4AC 0%, #450BB3 100%);
+    $grad2:-o-linear-gradient(bottom, #40F4AC 0%, #450BB3 100%);
+    $grad3:-moz-linear-gradient(bottom, #40F4AC 0%, #450BB3 100%);
+    $grad4:-webkit-linear-gradient(bottom, #40F4AC 0%, #450BB3 100%);
+
+    .s1div:nth-child(odd) {
+        @include transform(rotate(25deg));
+        background: $grad4;
+        background: $grad2;
+        background: $grad3;
+        background: $grad1;
+        
+        height:182%;
+        width:58%;
+        float:left;
+        margin-top:-20%;
+        margin-left:-23%;
+        @include breakpoint(small) {@include transform(rotate(0deg)); margin-left:-10%;}
+    }   
+    .s1div:nth-child(even) {
+        height:100%;
+        width:39%;
+        float:right;
+    }
+    .s1Heading{
+        padding-top:10rem;
+        color: $white;
+        text-align:center;
+        font-size:10rem;
+    }
+    .img1{
+        width: 44%;
+        height: 75%;
+        float: right;
+        padding-top: 14rem;
+        margin-right: 5rem;
+        @include breakpoint(medium) {float: right; width: 42%; height: 70%; margin-top: 4rem; padding-top: 19rem; margin-right: 1.6rem;}
+        @include breakpoint(small) {float: right; width: 50%; height: 68%; margin-top: 2rem; padding-top: 16rem; margin-right: 0.2rem;}
+    }    
+}
+/*************** SLIDE 1 OVER **************/
+
+/**************** SLIDE 2 ******************/
+
+// .wrap{
+//     max-width: 1240px;
+//     margin: auto;
+// }
+
+.slide2 {
+    height:100%;
+    border-bottom:1px dashed $black;
+    
+    .text2 {
+        width: 100%;
+        height:100%;
+        opacity: 1;
+        background: url(tasveer/slide2_2.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;            
+        
+        .slide2-description {
+            width: 100%;
+            height: 100%;            
+            font-size: 70px;
+            color: $darkblue;
+            font-weight: 400;
+            text-align: center;
+            font-style:condensed;
+            margin-top: 15rem;
+            padding-top: 2rem;
+            @include breakpoint(medium){padding-top: 9rem; font-size: 45px;}
+            @include breakpoint(small){padding-top: 2em; font-size: 34px;}            
+        }
+    }
+}
+
+
+/************** SLIDE 2 OVER ***************/
+
+/************** SLIDE 3 ***************/
+
+.shrink{
+    max-width:1200px;
+    margin:auto;
+}
+
+.s_data {
+    padding-top:15px;
+}
+
+.content {
+    width:50%;
+    float:left;
+    margin-left:10px;
+    @include breakpoint(small){width:90%; clear:both;}
+}
+
+.slide3 {
+    height:auto;
+    border-bottom:1px dashed $black;
+    font-weight: 400;
+    @include breakpoint(medium){display: none;}
+    @include breakpoint(small){display: none;}          
+    
+    .slide3heading {
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 400;
+        color: $blue; 
+    }
+    
+    .turnpages {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 400;
+        padding-top: 2rem;        
+        color: $blue;
+    }
+    .magzinetext {
+        text-align: left;
+        font-size: 4rem;
+        font-weight: 400;
+        margin: 0 auto;
+        color: $white;
+        z-index: 2000;
+    }
+
+    .magazine {
+        float:right;
+        display: inline-block;
+        height: 500px;
+        width: 800px;
+        margin: 80px 20rem 10px;
+        @include breakpoint(medium){display: none;}
+        @include breakpoint(small){display: none;}    
+    }
+    
+    .magazine .turn-page {
+        background-color:$lessblack;
+        background-size:100% 100%;
+    }
+}
+
+/************** SLIDE 3 OVER ***************/
+
+/************** SLIDE 4  ***************/
+
+.slide4 {
+    height:auto;
+    border-bottom:1px dashed $black;
+    @include breakpoint(small){background-image:url(tasveer/black.jpg); width: 100%; height:auto;}
+    @include breakpoint(medium){background-image:url(tasveer/black.jpg); width: 100%; height:auto;}
+
+    .teamHeading {
+        color: $blue;
+        text-align: center;
+        font-size: 7rem;
+        font-weight: 400;
+        @include breakpoint(small){font-size: 5rem;}
+    }
+
+    .teamline{
+        text-align: center;
+        color: $lessblue;
+        font-size: 3.5rem;
+        @include breakpoint(medium){font-size: 3rem; padding-top: 2rem;}
+        @include breakpoint(small){font-size: 2rem; padding-top: 0.7rem;}
+    }
+    
+    .team {
+        margin: 20px 0 0 0;
+        padding: 50px;
+        list-style: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .team:after, .teams:before {
+        content: '';
+        display: table;
+    }
+
+    .team:after {
+        clear: both;
+    }
+
+    .team li {
+        width: 240px;
+        height: 220px;
+        display: inline-block;
+        margin: 20px;
+        @include breakpoint(medium){width: 200px; height: 200px;}
+    }
+
+    .teams {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+        cursor: default;
+        @include transition(all 0.4s ease-in-out);
+    }
+
+    .image1 { 
+        background-image: url(tasveer/hsrai.jpg);
+        background-size: 253px 260px;
+        @include breakpoint(medium){background-size: 217px 239px;}
+    }
+
+    .image2 { 
+        background-image: url(tasveer/dk1.JPG);
+        background-size: 257px 240px;
+        @include breakpoint(medium){background-size: 217px 239px;}
+    }
+
+    .image3 { 
+        background-image: url(tasveer/satwant.JPG);
+        background-size: 284px 309px;
+        @include breakpoint(medium){background-size: 217px 239px;}
+    }
+
+    .image4 { 
+        background-image: url(tasveer/ravina.jpg);
+        background-size: cover;
+        @include breakpoint(medium){background-size: 217px 239px;}
+    }
+
+    .image5 { 
+        background-image: url(tasveer/dubey.jpg);
+        background-size: cover;
+        @include breakpoint(medium){background-size: 217px 239px;}
+    }
+
+    .description {
+        position: absolute;
+        background: rgba(63,147,147, 0.8);
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+        opacity: 0;
+        @include transition(all 0.4s ease-in-out);
+        @include transform(scale(0));
+        -webkit-backface-visibility: hidden;
+    }
+
+    .description h3 {
+        color: #fff;
+        // text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 22px;
+        margin: 10px 30px;
+        padding: 45px 0 0 0;
+        height: 100px;
+        @include text-shadow(0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3));
+    }
+
+    .description p {
+        color: #fff;
+        padding: 10px 5px;
+        font-style: italic;
+        margin: 0 30px;
+        font-size: 12px;
+        border-top: 1px solid rgba(255,255,255,0.5);
+        opacity: 0;
+        @include transition(all 1s ease-in-out 0.4s);
+    }
+
+    .description p a {
+        display: block;
+        color: #fff;
+        color: rgba(255,255,255,0.7);
+        font-style: normal;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 9px;
+        letter-spacing: 1px;
+        padding-top: 4px;
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+
+    .description p a:hover {
+        color: #fff222;
+        color: rgba(255,242,34, 0.8);
+    }
+
+    .teams:hover {
+        @include box-shadow(inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1));
+    }
+    
+    .teams:hover .description {
+        @include transform(scale(1));
+        opacity: 1;
+    }
+
+    .teams:hover .description p {
+        opacity: 1;
+    }        
+}
+/************** SLIDE 4 OVER ***********/
+
+/********* Slide 5 **********/
+
+.slide5 {
+    height:auto;
+    // border-bottom:1px dashed $black;
+    
+    .picture {
+        width:100%;
+        height:100%;
+        background:url(tasveer/gne2.jpg);
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size: 100% 100%;
+        border-bottom:1px dashed $black;
+        min-height:480px;
+        @include background-size(cover);
+
+        .picture-text {
+            padding-top:90px;
+            width:100%;
+            height:auto;
+            // .text {
+            //     font-size: 8rem;
+            //     font-weight: bold;
+            //     text-align: center;
+            //     color: $black;
+            // }
+        }
+    }
+
+    footer {
+        padding-top: 60px;
+        min-height:100px;
+        background:$lessblack;
+    }
+
+    .footer-text{
+        padding:15px 15px;
+        color:$grey;
+        font-size:1.4rem;
+        line-height:2.1rem;
+    }
+}
+
+/********* Slide 5 over **********/

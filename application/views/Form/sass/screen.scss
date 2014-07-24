@@ -1,0 +1,326 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,300);
+
+/***** Mixins ******/
+
+@mixin breakpoint($point) {
+    @if $point == small {
+        @media  only screen
+            and (max-width: 600px)  { @content; }
+}
+@else if $point == medium {
+    @media only screen
+        and (max-width: 820px) { @content; }
+}
+@else if $point == larger {
+    @media only screen
+        and (max-width: 1100px)  { @content; }
+  }
+}
+
+/***** Colors *******/
+
+$black:#222;
+$lessblack:#333;
+$lesserblack:#444;
+$blue:#52ADDA;
+$lessblue:#68B8DF;
+$darkblue: #0084cd;
+$grey:#C9C9C9;
+$lessgrey:#DBDBDB;
+$white:#fafafa;
+
+/***** Color-Ends *****/
+
+
+/***************** SASSY BEGINS ***************/
+
+/******* Header *********/
+
+.header {
+	height: 30%;
+	background: $blue;
+    @include breakpoint(medium){height: 32%;}
+    @include breakpoint(small){height: 23%;}
+    .heading1 {
+        padding-top: 6.5rem;
+        text-align: center;
+        font-size: 9rem;
+        font-weight: 23px;
+        font-family:Pacifico;
+        color: $lessblack;
+        @include breakpoint(medium){padding-top:11rem; font-size: 6rem;}
+        @include breakpoint(small){padding-top:6rem; font-size: 6rem; font-weight: 15px;}
+    } 
+}
+
+/******* Header Over *********/
+
+/***** Parent Code *********/
+
+.input {
+    background: transparent;
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 3;
+    border: 5px solid transparent;
+    width: 80%;
+    height: 12.3%;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    @include breakpoint(medium){text-align: left; width: 85%;}  
+    @include breakpoint(small){text-align: left;}      
+}
+
+.container {
+    height: 100%;
+    @include breakpoint(small) {min-height:400px;}
+}
+
+.s_data {
+    padding-top:30px;
+}
+
+.shrink{
+    max-width:1200px;
+    margin:auto;
+}
+
+.content {
+    width:50%;
+    float:left;
+    margin-left:10px;
+    @include breakpoint(small){width:90%; clear:both;}
+}
+
+h2.name{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: left;
+	color: $black;
+	padding-bottom: 3px;
+	margin-bottom: 1px;
+}
+
+/******* Parent ends *******/
+
+/*** Removal of this create red border on every field
+whosesoever contain "required" 
+****/
+
+[required] {
+    color:$black;
+    box-shadow: none;
+}
+
+/*** Performa ****/
+
+.performa {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+ 
+    .firstname {
+        @extend .input;
+    }
+
+    .middlename {
+        @extend .input;
+    }
+
+    .lastname {
+        @extend .input;
+    }
+
+    .fathername {
+        @extend .input;
+    }
+
+    .mothername {
+        @extend .input;
+    }
+
+    .sex {
+        @extend .input;
+    }
+
+    .dob {
+        @extend .input;
+    }
+
+    .telephone {
+        @extend .input;
+    } 
+
+    .postalcode {
+    	@extend .input;
+    }
+
+    .address {
+    	@extend .input;
+    } 
+
+    .branch {
+        @extend .input;
+    }
+
+    .eMail {
+        @extend .input;
+    }
+
+    .classronum {
+        @extend .input;
+    }        
+
+    .unironum {
+        @extend .input;
+    } 
+
+    .textarea {
+        @extend .input;
+        resize:none; 
+        height:200px; 
+        width:480px;
+    }
+
+    .submit {
+        font-size: 2.1rem;
+        background: $blue;
+        border: 0;
+        width: 250px;
+        height: 60px;
+        border-radius: 3px;
+        color: white;
+        curson: pointer;
+        @include transition(background 0.50s ease-in-out);
+        &:hover {
+            background: $black;
+        }     
+   	}                
+}
+
+/********** Angular **********/
+
+/****** Parent Class ***/
+
+.angularparent {
+    text-align: left;
+    font-size: 2.2rem;
+    margin-left: 4rem;
+}
+
+/*** Parent Class Over ***/
+
+.angular {
+    margin-left: 10px;
+    float: left;
+    height:100%;
+    width:43%;
+    @include breakpoint(small) {display: none;}
+    
+    .first_name {
+        padding-top: 2rem;
+        @extend .angularparent;
+        margin-left: 4rem;
+    }
+
+    .middle_name {
+        @extend .angularparent;
+    }
+
+    .last_name {
+        @extend .angularparent;
+        padding-bottom:2rem;
+    }
+
+    .father_name {
+        @extend .angularparent;
+    }    
+
+    .mother_name {
+        @extend .angularparent;
+        padding-bottom: 2rem;
+    }
+
+    .gender {
+        @extend .angularparent;
+    }
+
+    .d_o_b {
+        @extend .angularparent;
+    }
+
+    .field {
+        @extend .angularparent;
+    }      
+
+    .mailid {
+        @extend .angularparent;
+    }
+
+    .ph_no {
+        @extend .angularparent;
+    }    
+
+    .postal_code {
+        @extend .angularparent;
+    }
+
+    .add {
+        @extend .angularparent;
+        padding-bottom: 2rem;
+    }
+
+    .class {
+        @extend .angularparent;
+    }
+
+    .university {
+        @extend .angularparent;
+    }
+
+    .comment {
+        @extend .angularparent;
+    }
+}
+
+/**** Angular Over ****/
+
+
+/******** Thank you *******/
+
+.container1 {
+    height: 100%;
+    @include breakpoint(small) {min-height:400px;}
+}
+
+.s_data1 {
+    padding-top:30px;
+}
+
+.shrink1 {
+    max-width:1200px;
+    margin:auto;
+}
+
+.textarea {
+    .heading2 {
+        font-family:Pacifico;
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 350;
+        padding-top: 7.2rem;
+    }
+}
+
+/******** Thank you over *******/
+
