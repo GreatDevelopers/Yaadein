@@ -85,25 +85,22 @@
 								};
 					    	};
 					</script>
-				<!-- Firstname -->
-				<table>	
-	            	<h1 class="first_name">First Name : {{firstname}}</h1>
-	            	<h1 class="middle_name">Middle Name : {{middlename}}</h1>
-	            	<h1 class="last_name">Last Name : {{lastname}}</h1><br>
-	            	<h1 class="father_name">Father Name : {{fathername}}</h1>
-	            	<h1 class="mother_name">Mother Name : {{mothername}}</h1><br>
-	            	<h1 class="gender">Gender : {{sex}}</h1>
-	            	<h1 class="d_o_b">D.O.B : {{dob}}</h1>
-	            	<h1 class="ph_no">Mobile Numeber : {{telephone}}</h1>
-	            	<h1 class="postal_code">Postal Code : {{postalcode}}</h1>
-	            	<h1 class="add">Address : {{address}}</h1>
-	            	<h1 class="field">Branch : {{branch}}</h1>
-	            	<h1 class="mailid">E-mail : {{email}}</h1>	
-	            	<h1 class="class">Class Roll Number : {{classronum}}</h1>
-	            	<h1 class="university">University Roll Number : {{unironum}}</h1>            		
-	            	<h1 class="comment">Comment : {{textarea}}</h1>            	
-            		</tr>
-            	</table>
+				<!-- Angular classes -->
+				<h1 class="first_name">First Name : {{firstname}}</h1>
+	            <h1 class="middle_name">Middle Name : {{middlename}}</h1>
+	            <h1 class="last_name">Last Name : {{lastname}}</h1><br>
+	            <h1 class="father_name">Father Name : {{fathername}}</h1>
+	            <h1 class="mother_name">Mother Name : {{mothername}}</h1><br>
+	            <h1 class="gender">Gender : {{sex}}</h1>
+	            <h1 class="d_o_b">D.O.B : {{dob}}</h1>
+	            <h1 class="ph_no">Mobile Numeber : {{telephone}}</h1>
+	            <h1 class="postal_code">Postal Code : {{postalcode}}</h1>
+	            <h1 class="add">Address : {{address}}</h1>
+	            <h1 class="field">Branch : {{branch}}</h1>
+	            <h1 class="mailid">E-mail : {{email}}</h1>	
+	            <h1 class="class">Class Roll Number : {{classronum}}</h1>
+	            <h1 class="university">University Roll Number : {{unironum}}</h1>            		
+	            <h1 class="comment">Comment : {{textarea}}</h1>            
             </div>
             <div style="clear:both;">
            	</div>
