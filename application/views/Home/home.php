@@ -6,7 +6,7 @@
 
 <html>
 <head>
-	<title>Sovuenir</title>
+	<title>Yaadein</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="<?php echo base_url();?>application/views/Home/stylesheets/screen.css" media="screen,projection" rel="stylesheet" type="text/css">
