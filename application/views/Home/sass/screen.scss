@@ -49,19 +49,17 @@ $redpink: #E96D63;
 
 /***************** SASSY BEGINS ***************/
 
-a{
+a {
     text-decoration:none;
     color:white;
     &:hover{@include single-text-shadow(1px,1px);}
 }
 
-html
-{
+html {
     font-size:62.5%;
 }
 
-body
-{
+body {
     font-family:'Open Sans', sans-serif;
     font-size:1.6rem;
     @include breakpoint(small){overflow-x:hidden;}
@@ -71,14 +69,12 @@ body
     outline: 0;
 }
 
-::selection
-{
+::selection {
     background-color: $black;
     color:$white;
 }
 
-::-moz-selection
-{
+::-moz-selection {
     background-color: $black;
     color:$white;
 }
@@ -197,14 +193,16 @@ body
         text-align:center;
         font-size:10rem;
     }
-    .img1{
-        width: 44%;
-        height: 75%;
+    .image {
         float: right;
-        padding-top: 14rem;
-        margin-right: 5rem;
-        @include breakpoint(medium) {float: right; width: 42%; height: 70%; margin-top: 4rem; padding-top: 19rem; margin-right: 1.6rem;}
-        @include breakpoint(small) {float: right; width: 50%; height: 68%; margin-top: 2rem; padding-top: 16rem; margin-right: 0.2rem;}
+        width: 50%;
+        height: 70%;
+        margin-top: 14rem;
+        background-image: url(tasveer/Yaadein.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include breakpoint(medium){background-size: contain; margin-top: 23rem;}
+        @include breakpoint(small){background-size: contain; margin-top: 24rem;}
     }    
 }
 /*************** SLIDE 1 OVER **************/
@@ -236,7 +234,6 @@ body
             color: $darkblue;
             font-weight: 400;
             text-align: center;
-            font-style:condensed;
             margin-top: 15rem;
             padding-top: 2rem;
             @include breakpoint(medium){padding-top: 9rem; font-size: 45px;}
@@ -361,7 +358,7 @@ body
         height: 220px;
         display: inline-block;
         margin: 20px;
-        @include breakpoint(medium){width: 200px; height: 200px;}
+        @include breakpoint(medium){width: 180px; height: 180px;}       
     }
 
     .teams {
@@ -375,32 +372,32 @@ body
 
     .image1 { 
         background-image: url(tasveer/hsrai.jpg);
-        background-size: 253px 260px;
-        @include breakpoint(medium){background-size: 217px 239px;}
+        background-size: cover;
+        // @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image2 { 
         background-image: url(tasveer/dk1.JPG);
-        background-size: 257px 240px;
-        @include breakpoint(medium){background-size: 217px 239px;}
+        background-size: cover;
+        // @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image3 { 
         background-image: url(tasveer/satwant.JPG);
-        background-size: 284px 309px;
-        @include breakpoint(medium){background-size: 217px 239px;}
+        background-size: cover;
+        // @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image4 { 
         background-image: url(tasveer/ravina.jpg);
         background-size: cover;
-        @include breakpoint(medium){background-size: 217px 239px;}
+        // @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image5 { 
         background-image: url(tasveer/dubey.jpg);
         background-size: cover;
-        @include breakpoint(medium){background-size: 217px 239px;}
+        // @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .description {
@@ -424,6 +421,7 @@ body
         padding: 45px 0 0 0;
         height: 100px;
         @include text-shadow(0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3));
+        @include breakpoint(small){font-size: 12px; padding: 19px 0px 0px;}
     }
 
     .description p {
@@ -480,12 +478,11 @@ body
         width:100%;
         height:100%;
         background:url(tasveer/gne2.jpg);
-        background-repeat:no-repeat;
+        background-size: cover;
         background-attachment:fixed;
-        background-size: 100% 100%;
+        background-repeat:no-repeat;
         border-bottom:1px dashed $black;
         min-height:480px;
-        @include background-size(cover);
 
         .picture-text {
             padding-top:90px;
@@ -507,6 +504,7 @@ body
     }
 
     .footer-text{
+        text-align: center;
         padding:15px 15px;
         color:$grey;
         font-size:1.4rem;

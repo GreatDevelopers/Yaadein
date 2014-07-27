@@ -4,18 +4,19 @@ class Registration extends CI_Controller {
 
 	public function index() {
 
-					if($this->session->all_userdata()) 
+		if($this->session->all_userdata()) 
    		$email=$this->session->userdata('username');
-   			$data['name'] =$email['id'];
+   		$data['name'] =$email['id'];
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->load->helper('string');
+		$this->load->helper('url');
 		$string = random_string('alnum',20);
 		$this->form_validation->set_rules('Name', 'Username', 'required');
 		$this->form_validation->set_rules('Password', 'Password', 'required|sha1');
 		$this->form_validation->set_rules('Passconf', 'Password Confirmation', 'required');
-		$this->form_validation->set_rules('Email', 'Email', 'required');
-		$this->load->helper('url');
+		$this->form_validation->set_rules('Email', 'Email', 'required|is_unique[register.email]');
+		$this->form_validation->set_message('is_unique', 'Email already exists. Try to register with another email address.');
 		
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('Register/registration.php');

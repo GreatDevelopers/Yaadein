@@ -29,8 +29,12 @@
     <section class="s1sec">
         <div class="s1div">
         </div>
-        	<img src="<?php echo base_url();?>application/views/Home/stylesheets/tasveer/Yaadein.png" alt="logo" class="img1">
-        	<!-- <h1 class="s1Heading">Yaadein</h1> -->        
+		<!-- Yaadein Image -->
+        <div class="image">
+        </div>
+        <!-- Clear Both -->
+		<div style="clear:both;">
+        </div>                
     </section>
 </div>
 

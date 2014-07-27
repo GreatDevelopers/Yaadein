@@ -18,7 +18,7 @@
 		</header>
         <div class="s_data shrink">
             <div class="content1 id_first-slide-text">
-            	<h1 class="heading2">You Have Successfully Registered.<br><br>Please Confirm Your E-mail.</h1>
+            	<h1 class="heading2">You have successfully Registered.<br><br>Please Confirm Your E-mail.</h1>
             </div>
             <div class="keepCalm iris">
             	<img src="<?php echo base_url();?>application/views/Register/stylesheets/tasveer/crown1.png">

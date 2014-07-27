@@ -11,11 +11,16 @@ class Feedback extends CI_Controller {
 
         if ($this->form_validation->run() == FALSE)
         {
+            if($this->session->all_userdata()) 
+            $email=$this->session->userdata('username');
+            $data['name'] =$email['id'];    
             $this->load->view('feedback/feedback.php');
-            $this->load->view('Home/header.php');
-        }
-        else
-        {   $this->load->view('Home/header.php');
+            $this->load->view('Home/header.php', $data);
+        } else {
+            if($this->session->all_userdata()) 
+            $email=$this->session->userdata('username');
+            $data['name'] =$email['id'];       
+            $this->load->view('Home/header.php', $data);
             $this->load->view('feedback/success.php');
             $this->load->model('feedback_model');
             $this->feedback_model->feedback_user();

@@ -37,6 +37,7 @@ $darkblue: #0084cd;
 $grey:#C9C9C9;
 $lessgrey:#DBDBDB;
 $white:#fafafa;
+$red: #C21D0C;
 
 /***** Color-Ends *****/
 
@@ -240,3 +241,8 @@ $white:#fafafa;
 }
 
 /******** Registeration_done Over*******/
+.error {
+    text-align: left;
+    color: $red;
+    font-size: 2rem;   
+}

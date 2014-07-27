@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>application/views/Home/stylesheets/mobileView.css" />
 	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script></head>
 <body>
-<!-- Validations Codeigniter  -->
+<!-- Validations Codeigniter  -->	
 <?php echo form_open(); ?>
 <!-- Valdiations Over -->
 	<div class="container register">
@@ -22,9 +22,10 @@
         <div class="s_data shrink">
             <div class="content id_first-slide-text">
             	<form class="register" method="post" accept-charset="utf-8" action="<?php echo base_url();?>Souvenir-2.0/index.php/registration">
+					<?php echo validation_errors('<div class="error">', '</div>'); ?>
 					<input type="text" class="name" name="Name"  pattern="[a-zA-Z\s]+{5,}" title="Characters Only." placeholder="Name" required /><br>
 					<input type="email" class="eMail" name="Email" placeholder="E-mail" title="Please Fill Valid Email Address" required /><br>
-					<input type="password" class="pass" name="Password" onchange="form.Passconf.pattern = this.value;" placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Minimum 8 words having UpperCase, LowerCase, Letter and Number." required /><br>
+					<input type="password" class="pass" name="Password" onchange="form.Passconf.pattern = this.value;" placeholder="Password"  pattern="(?=.*[a-zA-Z0-9]).{8,}" title="Minimum 8 words having at least one speical character( Like : @#$%)." required /><br>
 					<input type="password" class="cPass" name="Passconf" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Fill Same Password" required /><br><br>  
 					<p style="text-align: center;"><input type='submit' class="submit" value='Register'/></p>
 				</form>	
