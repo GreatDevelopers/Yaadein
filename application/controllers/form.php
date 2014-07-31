@@ -22,7 +22,6 @@ class Form extends CI_Controller {
 	public function do_upload() {
 		
 		$this->load->library('form_validation');
-		$this->load->library('image_lib');
 		$this->form_validation->set_rules('Firstname', 'Firstname', 'required');
 		$this->form_validation->set_rules('Middlename', 'Middlename');
 		$this->form_validation->set_rules('Lastname', 'Lastname', 'required');
@@ -46,6 +45,7 @@ class Form extends CI_Controller {
 		$this->form_validation->set_rules('Unironum', 'UniversityRollNumber', 'required');
 		$this->form_validation->set_rules('Comment', 'Comment', 'required');
 		
+
 		$config['upload_path'] = './uploads';
 		$config['allowed_types'] = 'gif|jpg|JPG|png';
 
@@ -61,8 +61,8 @@ class Form extends CI_Controller {
 		{
 		
 			$data = $this->upload->data();
+			$this->resize($data['full_path'],$data['file_name']);
 			$this->load->model('form_model');
-			$this->do_thumb($data['full_path']);
 			$this->load->view('Form/success', $data);
 			if($this->session->all_userdata()) 
    			$email=$this->session->userdata('username');
@@ -72,21 +72,19 @@ class Form extends CI_Controller {
 		}
 	}
 
-	public function do_thumb($file) {
-		$image_data = $this->upload->data();
+
+		public function resize($path, $file) {
 		$config['image_library'] = 'gd2';
-		$config['source_image'] = $image_data['full_path'];
+		$config['source_image'] = $path;
 		$config['create_thumb'] = TRUE;	
 		$config['maintain_ratio'] = TRUE;
-		$config['width'] = 275;
-		$config['height'] = 250;
+		$config['width'] = 150;
+		$config['height'] = 75;
+		$config['new_image']='./uploads/'.$file;
 
 		$this->load->library('image_lib', $config);
-
-		if ( ! $this->image_lib->resize())
-		{
-		    echo $this->image_lib->display_errors();
-		}
+		$this->image_lib->resize();
+		$this->image_lib->clear();
 	}
 }
 ?>

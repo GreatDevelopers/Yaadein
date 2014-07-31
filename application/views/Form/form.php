@@ -20,6 +20,7 @@
 	</header>
         <div class="s_data shrink">
             <div class="content">
+            	
             	<?php echo $error;?>
 				<?php echo form_open_multipart('form/do_upload');?>					
             	<form class="performa" method="post" accept-charset="utf-8" action="<?php echo base_url();?>index.php/form">
