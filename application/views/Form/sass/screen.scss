@@ -46,8 +46,8 @@ $white:#fafafa;
 /******* Header *********/
 
 .header {
-	height: 30%;
-	background: $blue;
+    height: 30%;
+    background: $blue;
     @include breakpoint(medium){height: 32%;}
     @include breakpoint(small){height: 23%;}
     .heading1 {
@@ -102,13 +102,13 @@ $white:#fafafa;
 }
 
 h2.name{
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: 400;
-	text-align: left;
-	color: $black;
-	padding-bottom: 3px;
-	margin-bottom: 1px;
+    font-size: 18px;
+    // text-transform: uppercase;
+    font-weight: 400;
+    text-align: left;
+    color: $black;
+    padding-bottom: 3px;
+    margin-bottom: 1px;
 }
 
 /******* Parent ends *******/
@@ -141,11 +141,35 @@ whosesoever contain "required"
         @extend .input;
     }
 
-    .fathername {
+    .prefix1 {
         @extend .input;
     }
 
-    .mothername {
+    .father-firstname {
+        @extend .input;
+    }
+
+    .father-middlename {
+        @extend .input;
+    }
+
+    .father-lastname {
+        @extend .input;
+    }
+
+    .prefix2 {
+        @extend .input;
+    }
+
+    .mother-firstname {
+        @extend .input;
+    }
+
+    .mother-middlename {
+        @extend .input;
+    }
+
+    .mother-lastname {
         @extend .input;
     }
 
@@ -162,11 +186,11 @@ whosesoever contain "required"
     } 
 
     .postalcode {
-    	@extend .input;
+        @extend .input;
     }
 
     .address {
-    	@extend .input;
+        @extend .input;
     } 
 
     .branch {
@@ -206,7 +230,7 @@ whosesoever contain "required"
         &:hover {
             background: $black;
         }     
-   	}                
+    }                
 }
 
 /********** Angular **********/
@@ -248,15 +272,16 @@ whosesoever contain "required"
         @extend .bluecolor;
     }
 
-    .middle_name {
-        @extend .angularparent;
-        @extend .whitecolor;
-    }
+    // Un-comment these lines to display name field seperatly 
+    // .middle_name {
+    //     @extend .angularparent;
+    //     @extend .whitecolor;
+    // }
 
-    .last_name {
-        @extend .angularparent;
-        @extend .bluecolor;
-    }
+    // .last_name {
+    //     @extend .angularparent;
+    //     @extend .bluecolor;
+    // }
 
     .father_name {
         @extend .angularparent;
@@ -320,9 +345,12 @@ whosesoever contain "required"
     }
 
     .upload_image {
-        margin-left: 11.5rem;
+        margin-left: 8rem;
         margin-bottom: 3rem;
         margin-top: 2rem;
+        width: 78% !important;
+        height: 62% !important;
+        background-repeat: no-repeat;
     }
 }
 

@@ -9,8 +9,14 @@ class Form_model extends CI_Model {
 		$firstname = $this->input->post('Firstname');
 		$middlename = $this->input->post('Middlename');
 		$lastname = $this->input->post('Lastname');
-		$fathername = $this->input->post('Fathername');
-		$mothername = $this->input->post('Mothername');
+		$fatherprefix = $this->input->post('Fatherprefix');
+		$fatherfirstname = $this->input->post('Fatherfirstname');
+		$fathermiddlename = $this->input->post('Fathermiddlename');
+		$fatherlastname = $this->input->post('Fatherlastname');
+		$motherprefix = $this->input->post('Motherprefix');
+		$motherfirstname = $this->input->post('Motherfirstname');
+		$mothermiddlename = $this->input->post('Mothermiddlename');
+		$motherlastname = $this->input->post('Motherlastname');
 		$gender = $this->input->post('Gender');
 		$dob = $this->input->post('DOB');
 		$mobile = $this->input->post('Mobile');
@@ -27,8 +33,14 @@ class Form_model extends CI_Model {
 			'firstname' => $this->input->post('Firstname'),
 			'middlename' => $this->input->post('Middlename'),
 			'lastname' => $this->input->post('Lastname'),
-			'fathername' => $this->input->post('Fathername'),
-			'mothername' => $this->input->post('Mothername'),
+			'fatherprefix' => $this->input->post('Fatherprefix'),
+			'fatherfirstname' => $this->input->post('Fatherfirstname'),
+			'fathermiddlename' => $this->input->post('Fathermiddlename'),
+			'fatherlastname' => $this->input->post('Fatherlastname'),
+			'motherprefix' => $this->input->post('Motherprefix'),
+			'motherfirstname' => $this->input->post('Motherfirstname'),
+			'mothermiddlename' => $this->input->post('Mothermiddlename'),
+			'motherlastname' => $this->input->post('Motherlastname'),
 			'gender' => $this->input->post('Gender'),
 			'dob' => $this->input->post('DOB'),
 			'mobile' => $this->input->post('Mobile'),
@@ -44,4 +56,4 @@ class Form_model extends CI_Model {
 		$this->db->insert('student', $data);
 	}
 }
-?>	
+?>
