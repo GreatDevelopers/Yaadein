@@ -206,13 +206,24 @@ whosesoever contain "required"
   height: 100%;
   width: 100%;
 }
-/* line 212, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
+.performa .uploadImage {
+  font-size: 2.1rem;
+  background: #52adda;
+  border: 0;
+  width: 269px;
+  height: 65px;
+  margin-left: -11.5rem;
+  border-radius: 3px;
+  color: white;
+}
+/* line 223, ../sass/screen.scss */
 .performa .textarea {
   resize: none;
   height: 200px;
   width: 480px;
 }
-/* line 219, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .performa .submit {
   font-size: 2.1rem;
   background: #52adda;
@@ -228,14 +239,14 @@ whosesoever contain "required"
   -o-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
 }
-/* line 230, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .performa .submit:hover {
   background: #222222;
 }
 
 /********** Angular **********/
 /****** Parent Class ***/
-/* line 240, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .angularparent, .angular .first_name, .angular .father_name, .angular .mother_name, .angular .gender, .angular .d_o_b, .angular .field, .angular .mailid, .angular .ph_no, .angular .postal_code, .angular .add, .angular .class, .angular .university, .angular .comment {
   text-align: left;
   font-size: 2.2rem;
@@ -243,24 +254,24 @@ whosesoever contain "required"
   text-indent: 2rem;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .whitecolor, .angular .father_name, .angular .gender, .angular .mailid, .angular .ph_no, .angular .add, .angular .university {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem;
   background-color: whitesmoke;
   font-size: 2.4rem;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .bluecolor, .angular .first_name, .angular .mother_name, .angular .d_o_b, .angular .field, .angular .postal_code, .angular .class, .angular .comment {
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem;
   background-color: #68b8df;
   font-size: 2.4rem;
 }
 
 /*** Parent Class Over ***/
-/* line 262, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .angular {
   margin-left: 10px;
   float: left;
@@ -268,20 +279,20 @@ whosesoever contain "required"
   width: 43%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 262, ../sass/screen.scss */
+  /* line 273, ../sass/screen.scss */
   .angular {
     display: none;
   }
 }
-/* line 269, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .angular .first_name {
   padding-top: 2rem;
 }
-/* line 326, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 .angular .add {
   padding-bottom: 2rem;
 }
-/* line 347, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .angular .upload_image {
   margin-left: 8rem;
   margin-bottom: 3rem;
@@ -293,29 +304,29 @@ whosesoever contain "required"
 
 /**** Angular Over ****/
 /******** Thank you *******/
-/* line 362, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .container1 {
   height: 100%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 362, ../sass/screen.scss */
+  /* line 373, ../sass/screen.scss */
   .container1 {
     min-height: 400px;
   }
 }
 
-/* line 367, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .s_data1 {
   padding-top: 30px;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .shrink1 {
   max-width: 1200px;
   margin: auto;
 }
 
-/* line 377, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .textarea .heading2 {
   font-family: Pacifico;
   text-align: center;

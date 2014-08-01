@@ -193,6 +193,17 @@ whosesoever contain "required"
         @extend .input;
     } 
 
+    .uploadImage {
+        font-size: 2.1rem;
+        background: $blue;
+        border: 0;
+        width: 269px;
+        height: 65px;
+        margin-left: -11.5rem;
+        border-radius: 3px;
+        color: white;
+    }
+
     .branch {
         @extend .input;
     }
@@ -245,15 +256,15 @@ whosesoever contain "required"
 }
 
 .whitecolor {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
     background-color: whitesmoke;
     font-size: 2.4rem;
 }
 
 .bluecolor {
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
     background-color: $lessblue;
     font-size: 2.4rem;    
 }

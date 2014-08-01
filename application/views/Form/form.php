@@ -21,56 +21,56 @@
         <div class="s_data shrink">
             <div class="content">
             	
-            	<?php echo $error;?>
+            	<!-- <?php echo $error;?> -->
 				<?php echo form_open_multipart('form/do_upload');?>					
             	<form class="performa" method="post" accept-charset="utf-8" action="<?php echo base_url();?>index.php/form">
 					<!-- Student Data -->
 
 					<h2 class="name">Name</h2><br>
-					<input type="text" ng-model="firstname" class="firstname" name="Firstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="First Name"  /><br>
-					<input type="text" ng-model="middlename" class="middlename" name="Middlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Middle Name" /><br>
-					<input type="text" ng-model="lastname" class="lastname" name="Lastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Last Name"   /><br><br>
+					<input type="text" ng-model="firstname" class="firstname" name="Firstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="First Name" required /><br>
+					<input type="text" ng-model="middlename" class="middlename" name="Middlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Middle Name" required /><br>
+					<input type="text" ng-model="lastname" class="lastname" name="Lastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Last Name" required /><br><br>
 					
 					<!-- Family -->
 					<h2 class="name">Family Details</h2><br><br>
 					<h2 class="name">Father Name Details</h2><br>
-					<select name="Fatherprefix" class="prefix1" ng-model="prefix1" >
+					<select name="Fatherprefix" class="prefix1" ng-model="prefix1" required>
                 		<option value="" disabled selected>Select Name Prefix</option>
                 		<option value="Mr.">Mr.</option>
                 		<option value="Sardar">Sardar</option>
                 		<option value="Dr.">Dr.</option>
                 		<option value="Er.">Er.</option>
         			</select><br>
-					<input type="text" ng-model="fatherfirstname" class="father-firstname" name="Fatherfirstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's First Name"  /><br>
-					<input type="text" ng-model="fathermiddlename" class="father-middlename" name="Fathermiddlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's Middle Name"  /><br>
-					<input type="text" ng-model="fatherlastname" class="father-lastname" name="Fatherlastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's Last Name"  /><br><br>
+					<input type="text" ng-model="fatherfirstname" class="father-firstname" name="Fatherfirstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's First Name" required /><br>
+					<input type="text" ng-model="fathermiddlename" class="father-middlename" name="Fathermiddlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's Middle Name" required /><br>
+					<input type="text" ng-model="fatherlastname" class="father-lastname" name="Fatherlastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's Last Name" required /><br><br>
 					<h2 class="name">Mother Name Details</h2><br>
-					<select name="Motherprefix" class="prefix2" ng-model="prefix2" >
+					<select name="Motherprefix" class="prefix2" ng-model="prefix2" required >
                 		<option value="" disabled selected>Select Name Prefix</option>
                 		<option value="Mrs.">Mrs.</option>
                 		<option value="Dr.">Dr.</option>
                 		<option value="Er.">Er.</option>
         			</select><br>
-					<input type="text" ng-model="motherfirstname" class="mother-firstname" name="Motherfirstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's First Name"  /><br>
-					<input type="text" ng-model="mothermiddlename" class="mother-middlename" name="Mothermiddlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's Middle Name"  /><br>
-					<input type="text" ng-model="motherlastname" class="mother-lastname" name="Motherlastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's Last Name"  /><br><br>	
+					<input type="text" ng-model="motherfirstname" class="mother-firstname" name="Motherfirstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's First Name" required /><br>
+					<input type="text" ng-model="mothermiddlename" class="mother-middlename" name="Mothermiddlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's Middle Name" required /><br>
+					<input type="text" ng-model="motherlastname" class="mother-lastname" name="Motherlastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's Last Name" required /><br><br>	
 					
 					<!-- Personal Details -->
 					<h2 class="name">Personal Details</h2><br>
 					<!-- Date Of Birth -->
-					<input type="text" ng-model="sex" class="sex" name="Gender"  pattern="[A-Z]{1}" title="Characters Only." placeholder="Gender : M/F"  /><br>
+					<input type="text" ng-model="sex" class="sex" name="Gender"  pattern="[A-Z]{1}" title="Characters Only." placeholder="Gender : M/F" required /><br>
 					<input type="text" ng-model="dob" class="dob" name="DOB" title="D.O.B : date/month_name/year" pattern="[0-3]{1}[0-9]{1}[/]{1}(January|Ferburary|March|April|May|June|July|August|September|October|November|December|)[/]{1}[0-9]{4}" placeholder="D.O.B Eg: 02/June/2000" title="DOB"  />
-					<input type="number" ng-model="telephone" class="telephone" name="Mobile" title="Mobile Number" pattern="[789][0-9]{0,9}" placeholder="Mobile Number" /><br>	
-					<input type="number" ng-model="postalcode" class="postalcode" name="Postalcode"  pattern="[1][0-9]{0,5}" title="Number Only." placeholder="Postal Code"  /><br>
-					<input type="textarea" ng-model="address" class="address" name="Address"  pattern="[a-zA-Z0-9.,-:/\s]+" title="Characters, Number, Dot, Comma, Colon and Backslash Only." placeholder="Address"  /><br><br>
+					<input type="number" ng-model="telephone" class="telephone" name="Mobile" title="Mobile Number" pattern="[0-9]{10}" placeholder="Mobile Number" required /><br>	
+					<input type="number" ng-model="postalcode" class="postalcode" name="Postalcode"  pattern="[0-9]{6}" title="Number Only." placeholder="Postal Code" required /><br>
+					<input type="textarea" ng-model="address" class="address" name="Address"  pattern="[a-zA-Z0-9.,-:/\s]+" title="Characters, Number, Dot, Comma, Colon and Backslash Only." placeholder="Address" required /><br><br>
 
 					<!-- Image -->
 					<h2 class="name">Upload Photo</h2><br>	
-					<input id="uploadImage" class="uploadImage" ng-model="image" type="file" name="userfile" onchange="PreviewImage();" size="20"  /><br><br>
+					<p style="text-align: center;"><input id="uploadImage" class="uploadImage" ng-model="image" type="file" name="userfile" onchange="PreviewImage();" size="20" required /></p><br><br>
 					
 					<!-- Class Details -->
 					<h2 class="name">Class Details</h2><br>
-					<select name="Branch" class="branch" ng-model="branch" placeholder="Enter Branch Name"  >
+					<select name="Branch" class="branch" ng-model="branch" placeholder="Enter Branch Name" required >
                 		<option value="" disabled selected>Select Branch</option>
                 		<option value="Mechanical">Mechanical</option>
                 		<option value="Production">Production</option>
@@ -80,10 +80,10 @@
                 		<option value="Electrical">Electrical</option>
                 		<option value="Electronics and Communication">Electronics and Communication</option>
         			</select>
-					<input type="email" ng-model="email" class="eMail" name="Email" placeholder="E-mail" title="Please Fill Valid Email Address"  /><br>
-					<input type="number" ng-model="classronum" class="classronum" name="Classronum"  pattern="[0-9\s]+" title="Number Only." placeholder="Class Roll Number"  /><br>
-					<input type="number" ng-model="unironum" class="unironum" name="Unironum"  pattern="[0-9\s]+" title="Number Only." placeholder="University Roll Number"  /><br>
-					<textarea class="textarea" ng-model="textarea" name="Comment" placeholder="Enter 2-3 Lines Comment"  /></textarea><br><br>
+					<input type="email" ng-model="email" class="eMail" name="Email" placeholder="E-mail" title="Please Fill Valid Email Address" required /><br>
+					<input type="number" ng-model="classronum" class="classronum" name="Classronum"  pattern="[0-9\s]+" title="Number Only." placeholder="Class Roll Number" required /><br>
+					<input type="number" ng-model="unironum" class="unironum" name="Unironum"  pattern="[0-9\s]+" title="Number Only." placeholder="University Roll Number" required /><br>
+					<textarea class="textarea" ng-model="textarea" name="Comment" placeholder="Enter 2-3 Lines Comment"  required ></textarea><br><br>
 					<p style="text-align: center;"><input type='submit' class="submit" value='Upload'/></p>
 				<?php echo form_close();?>
 				</form>	

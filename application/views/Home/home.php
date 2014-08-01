@@ -155,15 +155,16 @@
 
 <!-- Slide 5 -->
 <div class="slide5">
-	<!---------- Picture -------------->
+	<!-- Picture -->
 	<div class="picture">
        	<div class="picture-text">
-       		<!-- <p class="text">We are resposible for your friendship and we promise we'll keep this friendship forever</p> -->
-		    <div style="clear:both;">
-		    </div>
+       		<h3>Our Amalgam</h3>
+       		<h3>Our Pride</h3>
         </div>
-    </div>    
-	<!------- Picture ends here ------->	
+    </div>
+	<div style="clear:both;">
+	</div>        
+	<!-- Picture ends here -->
 	<!-- Footer Starts here -->
 		<footer>
 		    <p class="wrapped footer-text">Copyright © <?php echo date("Y");?> GNDEC Ludhiana</p>

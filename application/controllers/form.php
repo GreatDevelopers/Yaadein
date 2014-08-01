@@ -46,7 +46,7 @@ class Form extends CI_Controller {
 		$this->form_validation->set_rules('Comment', 'Comment', 'required');
 		
 
-		$config['upload_path'] = './uploads';
+		$config['upload_path'] = './uploads/activity_images/orignal';
 		$config['allowed_types'] = 'gif|jpg|JPG|png';
 
 		$this->load->library('upload', $config);
@@ -77,10 +77,10 @@ class Form extends CI_Controller {
 		$config['image_library'] = 'gd2';
 		$config['source_image'] = $path;
 		$config['create_thumb'] = TRUE;	
-		$config['maintain_ratio'] = TRUE;
-		$config['width'] = 150;
-		$config['height'] = 75;
-		$config['new_image']='./uploads/'.$file;
+		$config['maintain_ratio'] = FALSE;
+		$config['width'] = 350;
+		$config['height'] = 400;
+		$config['new_image']='./uploads/activity_images/thumbs/'.$file;
 
 		$this->load->library('image_lib', $config);
 		$this->image_lib->resize();

@@ -236,7 +236,7 @@ body {
             font-size: 70px;
             font-weight: 400;
             color: $darkblue;
-            text-shadow: 4px 4px 4px $white;
+            text-shadow: 3px 3px 3px $white;
             @include breakpoint(medium){padding-top: 9rem; font-size: 45px;}
             @include breakpoint(small){padding-top: 2em; font-size: 34px;}            
         }
@@ -275,7 +275,8 @@ body {
         text-align: center;
         font-size: 5rem;
         font-weight: 400;
-        color: $blue; 
+        color: $darkblue;
+        text-shadow: 1.5px 1.5px 1.5px $white;
     }
     
     .turnpages {
@@ -283,7 +284,8 @@ body {
         font-size: 3rem;
         font-weight: 400;
         padding-top: 2rem;        
-        color: $blue;
+        color: $darkblue;
+        text-shadow: 1.5px 1.5px 1.5px $white;
     }
     .magzinetext {
         text-align: left;
@@ -321,7 +323,8 @@ body {
     @include breakpoint(medium){background-image:url(tasveer/black.jpg); width: 100%; height:auto;}
 
     .teamHeading {
-        color: $blue;
+        color: $darkblue;
+        text-shadow: 2px 2px 1.5px $white;
         text-align: center;
         font-size: 7rem;
         font-weight: 400;
@@ -330,7 +333,8 @@ body {
 
     .teamline{
         text-align: center;
-        color: $lessblue;
+        color: $darkblue;
+        text-shadow: 1px 1px 1px $white;
         font-size: 3.5rem;
         @include breakpoint(medium){font-size: 3rem; padding-top: 2rem;}
         @include breakpoint(small){font-size: 2rem; padding-top: 0.7rem;}
@@ -472,8 +476,19 @@ body {
 /********* Slide 5 **********/
 
 .slide5 {
-    height:auto;
+    height:100%;
     // border-bottom:1px dashed $black;
+    h3 {
+        margin-top: 6rem;
+        font-size: 9.5rem;
+        font-style: normal;    
+        font-weight: bold;
+        text-align: center;
+        color: $darkblue;
+        text-shadow: 4px 4px 4px $white;
+        @include breakpoint(medium){font-size: 8rem; margin-top: 7.5rem;}
+        @include breakpoint(small){font-size: 6rem; margin-top: 10.5rem;}
+    }            
     
     .picture {
         width:100%;
@@ -483,18 +498,11 @@ body {
         background-attachment:fixed;
         background-repeat:no-repeat;
         border-bottom:1px dashed $black;
-        min-height:480px;
 
         .picture-text {
-            padding-top:90px;
+            padding-top:110px;
             width:100%;
             height:auto;
-            // .text {
-            //     font-size: 8rem;
-            //     font-weight: bold;
-            //     text-align: center;
-            //     color: $black;
-            // }
         }
     }
 
