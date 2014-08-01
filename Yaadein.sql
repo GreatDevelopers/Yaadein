@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 11, 2014 at 08:05 PM
+-- Generation Time: Aug 02, 2014 at 01:47 AM
 -- Server version: 5.5.37
--- PHP Version: 5.3.10-1ubuntu3.11
+-- PHP Version: 5.3.10-1ubuntu3.13
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -32,6 +32,14 @@ CREATE TABLE IF NOT EXISTS `feedback` (
   `comment` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`name`, `email`, `comment`) VALUES
+('Deepak', 'deeky.sharma@gmail.com', 'Hello'),
+('Deepak', 'deeky.sharma@gmail.com', 'dd');
+
 -- --------------------------------------------------------
 
 --
@@ -46,7 +54,14 @@ CREATE TABLE IF NOT EXISTS `register` (
   `password` varchar(128) NOT NULL,
   `active_status` varchar(2) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`id`, `name`, `email`, `email_verification_code`, `password`, `active_status`) VALUES
+(14, 'Deepak', 'deeky.sharma@gmail.com', 'LTZ9dA50fLt2zQMpfNTT', 'b45cfe2dccca8876162cf79919c9540e8b96fa9f', 'Y');
 
 -- --------------------------------------------------------
 
@@ -59,8 +74,15 @@ CREATE TABLE IF NOT EXISTS `student` (
   `firstname` varchar(128) NOT NULL,
   `middlename` varchar(128) NOT NULL,
   `lastname` varchar(128) NOT NULL,
-  `fathername` varchar(128) NOT NULL,
-  `mothername` varchar(128) NOT NULL,
+  `fatherprefix` varchar(50) NOT NULL,
+  `fatherfirstname` varchar(128) NOT NULL,
+  `fathermiddlename` varchar(128) NOT NULL,
+  `fatherlastname` varchar(128) NOT NULL,
+  `motherprefix` varchar(50) NOT NULL,
+  `motherfirstname` varchar(128) NOT NULL,
+  `mothermiddlename` varchar(128) NOT NULL,
+  `motherlastname` varchar(128) NOT NULL,
+  `gender` varchar(50) NOT NULL,
   `dob` text NOT NULL,
   `email` varchar(128) NOT NULL,
   `mobile` varchar(40) NOT NULL,
@@ -72,7 +94,14 @@ CREATE TABLE IF NOT EXISTS `student` (
   `universityrollno` int(20) NOT NULL,
   `comment` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=53 ;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`id`, `firstname`, `middlename`, `lastname`, `fatherprefix`, `fatherfirstname`, `fathermiddlename`, `fatherlastname`, `motherprefix`, `motherfirstname`, `mothermiddlename`, `motherlastname`, `gender`, `dob`, `email`, `mobile`, `postalcode`, `address`, `photo`, `branch`, `classrollno`, `universityrollno`, `comment`) VALUES
+(38, '', '', '', '0', '', '', '', '0', '', '', '', '', '', '', '', 0, '', 'gne2.jpg', '0', 0, 0, '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
