@@ -17,7 +17,7 @@
 <!-- Validations Codeigniter  -->
 <?php echo form_open(); ?>
 <!-- Valdiations Over -->
-<div class="conatiner">
+<div class="container">
    <div class="line">
        <h1 class="lineheading">Would like your</h1>
    </div>

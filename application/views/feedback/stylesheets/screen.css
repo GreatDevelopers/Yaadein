@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-/* line 17, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../usr/local/lib/ruby/gems/2.1.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -74,33 +74,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*****Color ends*****/
 /* line 52, ../sass/screen.scss */
 body {
-  background: url(skulls.png);
+  background: url(tasveer/black.jpg);
   font-family: Orphan, Futura Light, Futura, sans-serif;
   font-size: 4.8vw;
 }
 
 /*****css for background video*****/
 /* line 58, ../sass/screen.scss */
-.video-triangle {
-  z-index: -1000;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  position: fixed;
-}
-@media only screen and (max-width: 600px) {
-  /* line 58, ../sass/screen.scss */
-  .video-triangle {
-    width: auto;
-    height: auto;
-  }
+.container {
+  width: 100%;
+  height: 100%;
 }
 @media only screen and (max-width: 920px) {
   /* line 58, ../sass/screen.scss */
-  .video-triangle {
-    width: auto;
-    height: auto;
+  .container {
+    background: url(tasveer/black.jpg);
+    background-size: 100% 100%;
+    z-index: -2000;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 58, ../sass/screen.scss */
+  .container {
+    background: url(tasveer/black.jpg);
+    background-size: 100% 100%;
+    z-index: -2000;
   }
 }
 
@@ -156,7 +154,7 @@ body {
 
 /*****keyframes end*****/
 /*****Parent class for all FEEDBACK squares*****/
-/* line 75, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .feedback, .fb1, .fb2, .fb3, .fb4, .fb5, .fb6, .fb7, .fb8 {
   width: 6%;
   height: 15%;
@@ -167,12 +165,12 @@ body {
   background: linear-gradient(#ff6059, #f7467b);
 }
 @media only screen and (max-width: 600px) {
-  /* line 75, ../sass/screen.scss */
+  /* line 70, ../sass/screen.scss */
   .feedback, .fb1, .fb2, .fb3, .fb4, .fb5, .fb6, .fb7, .fb8 {
     display: none;
   }
 }
-/* line 84, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .feedback h1, .fb1 h1, .fb2 h1, .fb3 h1, .fb4 h1, .fb5 h1, .fb6 h1, .fb7 h1, .fb8 h1 {
   text-align: center;
   padding-top: 2rem;
@@ -180,7 +178,7 @@ body {
   color: #111111;
 }
 @media only screen and (max-width: 920px) {
-  /* line 84, ../sass/screen.scss */
+  /* line 79, ../sass/screen.scss */
   .feedback h1, .fb1 h1, .fb2 h1, .fb3 h1, .fb4 h1, .fb5 h1, .fb6 h1, .fb7 h1, .fb8 h1 {
     font-size: 4rem;
     padding-top: 1.5rem;
@@ -189,56 +187,56 @@ body {
 
 /*****Parent class for all FEEDBACK squares ends*****/
 /*****Individual classes for FEEDBACK squares*****/
-/* line 94, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .fb1 {
   left: 1%;
   animation: bob1 7s ease-in-out infinite alternate;
   -webkit-animation: bob1 7s ease-in-out infinite alternate;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .fb2 {
   left: 8%;
   animation: bob 7s ease-in-out infinite alternate;
   -webkit-animation: bob 7s ease-in-out infinite alternate;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .fb3 {
   left: 15%;
   animation: bob1 7s ease-in-out infinite alternate;
   -webkit-animation: bob1 7s ease-in-out infinite alternate;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .fb4 {
   left: 22%;
   animation: bob 7s ease-in-out infinite alternate;
   -webkit-animation: bob 7s ease-in-out infinite alternate;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .fb5 {
   left: 29%;
   animation: bob1 7s ease-in-out infinite alternate;
   -webkit-animation: bob1 7s ease-in-out infinite alternate;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .fb6 {
   left: 36%;
   animation: bob 7s ease-in-out infinite alternate;
   -webkit-animation: bob 7s ease-in-out infinite alternate;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .fb7 {
   left: 43%;
   animation: bob1 7s ease-in-out infinite alternate;
   -webkit-animation: bob1 7s ease-in-out infinite alternate;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .fb8 {
   left: 50%;
   animation: bob 7s ease-in-out infinite alternate;
@@ -247,7 +245,7 @@ body {
 
 /*****Individual classes for FEEDBACK squares ends*****/
 /*****Class for the text "Would like your"*****/
-/* line 136, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .line, .success {
   width: 40%;
   height: auto;
@@ -257,7 +255,7 @@ body {
   color: ffffff;
   text-align: center;
 }
-/* line 144, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .line .lineheading, .success .lineheading {
   font-family: Orphan, Futura Light, Futura, sans-serif;
   font-size: 6rem;
@@ -267,19 +265,19 @@ body {
   text-shadow: 0 5 2px #000008;
 }
 @media only screen and (max-width: 920px) {
-  /* line 144, ../sass/screen.scss */
+  /* line 139, ../sass/screen.scss */
   .line .lineheading, .success .lineheading {
     font-size: 3rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 136, ../sass/screen.scss */
+  /* line 131, ../sass/screen.scss */
   .line, .success {
     visibility: hidden;
   }
 }
 @media only screen and (max-width: 920px) {
-  /* line 136, ../sass/screen.scss */
+  /* line 131, ../sass/screen.scss */
   .line, .success {
     width: 200px;
     height: 100px;
@@ -289,14 +287,14 @@ body {
 
 /*****CLass for text "Would like your ends*****/
 /*****Classes for feedback success page*****/
-/* line 158, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .success {
   left: 15%;
   width: 70%;
   height: 40%;
 }
 @media only screen and (max-width: 920px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 153, ../sass/screen.scss */
   .success {
     width: 400px;
     height: 150px;
@@ -304,7 +302,7 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 158, ../sass/screen.scss */
+  /* line 153, ../sass/screen.scss */
   .success {
     visibility: visible;
   }
@@ -312,7 +310,7 @@ body {
 
 /*****Classes for feedback success page ends*****/
 /*****CSS for Outer div of the form*****/
-/* line 168, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .form-div {
   background-color: rgba(200, 200, 200, 0.4);
   padding-left: 3%;
@@ -329,7 +327,7 @@ body {
   -webkit-border-radius: 10px;
 }
 @media only screen and (max-width: 600px) {
-  /* line 168, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   .form-div {
     left: 8%;
     margin-right: 6%;
@@ -343,7 +341,7 @@ body {
 
 /*****CSS for Outer div of the form ends*****/
 /*****Common class for all input fields*****/
-/* line 192, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .feedback-input, .name, .name:focus, .email, .email:focus, .comment, .comment:focus {
   color: #37b689;
   font-family: Helvetica, Arial, sans-serif;
@@ -357,7 +355,7 @@ body {
   border: 3px solid rgba(0, 0, 0, 0);
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .feedback-input:focus, .name:focus, .email:focus, .comment:focus {
   background: white;
   box-shadow: 0;
@@ -369,32 +367,32 @@ body {
 
 /*Common class for all input fields ends*****/
 /*****Individual classes for input fields*****/
-/* line 215, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .icons, .name, .name:focus, .email, .email:focus, .comment, .comment:focus {
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .name, .name:focus {
   background-image: url(tasveer/name.svg);
   height: 13%;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .email, .email:focus {
   background-image: url(tasveer/email.svg);
   height: 13%;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .comment, .comment:focus {
   background-image: url(tasveer/comment.svg);
   height: 45%;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 textarea {
   width: 100%;
   height: 150px;
@@ -402,13 +400,13 @@ textarea {
   resize: vertical;
 }
 
-/* line 246, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 input:hover, textarea:hover,
 input:focus, textarea:focus {
   background-color: white;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .button-blue {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   float: left;
@@ -427,18 +425,18 @@ input:focus, textarea:focus {
   -o-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
 }
-/* line 264, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .button-blue:hover {
   background: white;
   color: #37b689;
 }
 
-/* line 269, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .submit {
   background: white;
 }
 
-/* line 273, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .submit:hover {
   color: #37b689;
 }

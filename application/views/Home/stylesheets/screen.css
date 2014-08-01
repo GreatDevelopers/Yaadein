@@ -205,30 +205,28 @@ body {
   height: auto;
   position: fixed;
 }
-@media only screen and (max-width: 600px) {
-  /* line 137, ../sass/screen.scss */
-  .video-triangle {
-    width: auto;
-    height: auto;
-  }
-}
 @media only screen and (max-width: 820px) {
   /* line 137, ../sass/screen.scss */
   .video-triangle {
-    width: auto;
-    height: auto;
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 137, ../sass/screen.scss */
+  .video-triangle {
+    display: none;
   }
 }
 
 /***** SLIDES GOES FROM HERE *****/
 /**************** SLIDE 1 ******************/
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .slide1 {
   height: 100%;
   border-bottom: 1px dashed #222222;
 }
 @media only screen and (max-width: 600px) {
-  /* line 154, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   .slide1 {
     background-image: url(tasveer/black.jpg);
     width: 100%;
@@ -236,14 +234,14 @@ body {
   }
 }
 @media only screen and (max-width: 820px) {
-  /* line 154, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   .slide1 {
     background-image: url(tasveer/black.jpg);
     width: 100%;
     height: 100%;
   }
 }
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .slide1 .s1sec {
   display: block;
   width: 100%;
@@ -251,7 +249,7 @@ body {
   overflow: hidden;
   opacity: 0.90;
 }
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .slide1 .s1div:nth-child(odd) {
   -webkit-transform: rotate(25deg);
   -moz-transform: rotate(25deg);
@@ -269,7 +267,7 @@ body {
   margin-left: -23%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 171, ../sass/screen.scss */
+  /* line 172, ../sass/screen.scss */
   .slide1 .s1div:nth-child(odd) {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -279,20 +277,20 @@ body {
     margin-left: -10%;
   }
 }
-/* line 185, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .slide1 .s1div:nth-child(even) {
   height: 100%;
   width: 39%;
   float: right;
 }
-/* line 190, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .slide1 .s1Heading {
   padding-top: 10rem;
   color: #fafafa;
   text-align: center;
   font-size: 10rem;
 }
-/* line 196, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .slide1 .image {
   float: right;
   width: 50%;
@@ -303,14 +301,14 @@ body {
   background-size: contain;
 }
 @media only screen and (max-width: 820px) {
-  /* line 196, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   .slide1 .image {
     background-size: contain;
     margin-top: 23rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 196, ../sass/screen.scss */
+  /* line 197, ../sass/screen.scss */
   .slide1 .image {
     background-size: contain;
     margin-top: 24rem;
@@ -319,12 +317,12 @@ body {
 
 /*************** SLIDE 1 OVER **************/
 /**************** SLIDE 2 ******************/
-/* line 217, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .slide2 {
   height: 100%;
   border-bottom: 1px dashed #222222;
 }
-/* line 221, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .slide2 .text2 {
   width: 100%;
   height: 100%;
@@ -334,7 +332,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
 }
-/* line 230, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .slide2 .text2 .slide2-description {
   width: 100%;
   height: 100%;
@@ -347,14 +345,14 @@ body {
   text-shadow: 3px 3px 3px #fafafa;
 }
 @media only screen and (max-width: 820px) {
-  /* line 230, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   .slide2 .text2 .slide2-description {
     padding-top: 9rem;
     font-size: 45px;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 230, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   .slide2 .text2 .slide2-description {
     padding-top: 2em;
     font-size: 34px;
@@ -363,50 +361,50 @@ body {
 
 /************** SLIDE 2 OVER ***************/
 /************** SLIDE 3 ***************/
-/* line 251, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .shrink {
   max-width: 1200px;
   margin: auto;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .s_data {
   padding-top: 15px;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .content {
   width: 50%;
   float: left;
   margin-left: 10px;
 }
 @media only screen and (max-width: 600px) {
-  /* line 260, ../sass/screen.scss */
+  /* line 261, ../sass/screen.scss */
   .content {
     width: 90%;
     clear: both;
   }
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .slide3 {
   height: auto;
   border-bottom: 1px dashed #222222;
   font-weight: 400;
 }
 @media only screen and (max-width: 820px) {
-  /* line 267, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   .slide3 {
     display: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 267, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   .slide3 {
     display: none;
   }
 }
-/* line 274, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .slide3 .slide3heading {
   text-align: center;
   font-size: 5rem;
@@ -414,7 +412,7 @@ body {
   color: #0099ff;
   text-shadow: 1.5px 1.5px 1.5px #fafafa;
 }
-/* line 282, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .slide3 .turnpages {
   text-align: center;
   font-size: 3rem;
@@ -423,7 +421,7 @@ body {
   color: #0099ff;
   text-shadow: 1.5px 1.5px 1.5px #fafafa;
 }
-/* line 290, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .slide3 .magzinetext {
   text-align: left;
   font-size: 4rem;
@@ -432,7 +430,7 @@ body {
   color: #fafafa;
   z-index: 2000;
 }
-/* line 299, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 .slide3 .magazine {
   float: right;
   display: inline-block;
@@ -441,18 +439,18 @@ body {
   margin: 80px 20rem 10px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 299, ../sass/screen.scss */
+  /* line 300, ../sass/screen.scss */
   .slide3 .magazine {
     display: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 299, ../sass/screen.scss */
+  /* line 300, ../sass/screen.scss */
   .slide3 .magazine {
     display: none;
   }
 }
-/* line 309, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .slide3 .magazine .turn-page {
   background-color: #333333;
   background-size: 100% 100%;
@@ -460,13 +458,13 @@ body {
 
 /************** SLIDE 3 OVER ***************/
 /************** SLIDE 4  ***************/
-/* line 319, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .slide4 {
   height: auto;
   border-bottom: 1px dashed #222222;
 }
 @media only screen and (max-width: 600px) {
-  /* line 319, ../sass/screen.scss */
+  /* line 320, ../sass/screen.scss */
   .slide4 {
     background-image: url(tasveer/black.jpg);
     width: 100%;
@@ -474,14 +472,14 @@ body {
   }
 }
 @media only screen and (max-width: 820px) {
-  /* line 319, ../sass/screen.scss */
+  /* line 320, ../sass/screen.scss */
   .slide4 {
     background-image: url(tasveer/black.jpg);
     width: 100%;
     height: auto;
   }
 }
-/* line 325, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .slide4 .teamHeading {
   color: #0099ff;
   text-shadow: 2px 2px 1.5px #fafafa;
@@ -490,12 +488,12 @@ body {
   font-weight: 400;
 }
 @media only screen and (max-width: 600px) {
-  /* line 325, ../sass/screen.scss */
+  /* line 326, ../sass/screen.scss */
   .slide4 .teamHeading {
     font-size: 5rem;
   }
 }
-/* line 334, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .slide4 .teamline {
   text-align: center;
   color: #0099ff;
@@ -503,20 +501,20 @@ body {
   font-size: 3.5rem;
 }
 @media only screen and (max-width: 820px) {
-  /* line 334, ../sass/screen.scss */
+  /* line 335, ../sass/screen.scss */
   .slide4 .teamline {
     font-size: 3rem;
     padding-top: 2rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 334, ../sass/screen.scss */
+  /* line 335, ../sass/screen.scss */
   .slide4 .teamline {
     font-size: 2rem;
     padding-top: 0.7rem;
   }
 }
-/* line 343, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .slide4 .team {
   margin: 20px 0 0 0;
   padding: 50px;
@@ -525,16 +523,16 @@ body {
   text-align: center;
   width: 100%;
 }
-/* line 352, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .slide4 .team:after, .slide4 .teams:before {
   content: '';
   display: table;
 }
-/* line 357, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .slide4 .team:after {
   clear: both;
 }
-/* line 361, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .slide4 .team li {
   width: 240px;
   height: 220px;
@@ -542,13 +540,13 @@ body {
   margin: 20px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 361, ../sass/screen.scss */
+  /* line 362, ../sass/screen.scss */
   .slide4 .team li {
     width: 180px;
     height: 180px;
   }
 }
-/* line 369, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .slide4 .teams {
   width: 100%;
   height: 100%;
@@ -560,32 +558,32 @@ body {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 378, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .slide4 .image1 {
   background-image: url(tasveer/hsrai.jpg);
   background-size: cover;
 }
-/* line 384, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .slide4 .image2 {
   background-image: url(tasveer/dk1.JPG);
   background-size: cover;
 }
-/* line 390, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .slide4 .image3 {
   background-image: url(tasveer/satwant.JPG);
   background-size: cover;
 }
-/* line 396, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .slide4 .image4 {
   background-image: url(tasveer/ravina.jpg);
   background-size: cover;
 }
-/* line 402, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 .slide4 .image5 {
   background-image: url(tasveer/dubey.jpg);
   background-size: cover;
 }
-/* line 408, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 .slide4 .description {
   position: absolute;
   background: rgba(63, 147, 147, 0.8);
@@ -604,7 +602,7 @@ body {
   transform: scale(0);
   -webkit-backface-visibility: hidden;
 }
-/* line 420, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .slide4 .description h3 {
   color: #fff;
   letter-spacing: 1px;
@@ -615,13 +613,13 @@ body {
   text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 600px) {
-  /* line 420, ../sass/screen.scss */
+  /* line 421, ../sass/screen.scss */
   .slide4 .description h3 {
     font-size: 12px;
     padding: 19px 0px 0px;
   }
 }
-/* line 432, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .slide4 .description p {
   color: #fff;
   padding: 10px 5px;
@@ -636,7 +634,7 @@ body {
   -o-transition: all 1s ease-in-out 0.4s;
   transition: all 1s ease-in-out 0.4s;
 }
-/* line 443, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 .slide4 .description p a {
   display: block;
   color: #fff;
@@ -649,18 +647,18 @@ body {
   padding-top: 4px;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-/* line 456, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 .slide4 .description p a:hover {
   color: #fff222;
   color: rgba(255, 242, 34, 0.8);
 }
-/* line 461, ../sass/screen.scss */
+/* line 462, ../sass/screen.scss */
 .slide4 .teams:hover {
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-/* line 465, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 .slide4 .teams:hover .description {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -669,18 +667,18 @@ body {
   transform: scale(1);
   opacity: 1;
 }
-/* line 470, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .slide4 .teams:hover .description p {
   opacity: 1;
 }
 
 /************** SLIDE 4 OVER ***********/
 /********* Slide 5 **********/
-/* line 478, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .slide5 {
   height: 100%;
 }
-/* line 481, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .slide5 h3 {
   margin-top: 6rem;
   font-size: 9.5rem;
@@ -691,20 +689,20 @@ body {
   text-shadow: 4px 4px 4px #fafafa;
 }
 @media only screen and (max-width: 820px) {
-  /* line 481, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   .slide5 h3 {
     font-size: 8rem;
     margin-top: 7.5rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 481, ../sass/screen.scss */
+  /* line 482, ../sass/screen.scss */
   .slide5 h3 {
     font-size: 6rem;
     margin-top: 10.5rem;
   }
 }
-/* line 493, ../sass/screen.scss */
+/* line 494, ../sass/screen.scss */
 .slide5 .picture {
   width: 100%;
   height: 100%;
@@ -714,19 +712,19 @@ body {
   background-repeat: no-repeat;
   border-bottom: 1px dashed #222222;
 }
-/* line 502, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .slide5 .picture .picture-text {
   padding-top: 110px;
   width: 100%;
   height: auto;
 }
-/* line 509, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .slide5 footer {
   padding-top: 60px;
   min-height: 100px;
   background: #333333;
 }
-/* line 515, ../sass/screen.scss */
+/* line 516, ../sass/screen.scss */
 .slide5 .footer-text {
   text-align: center;
   padding: 15px 15px;
