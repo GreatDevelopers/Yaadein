@@ -28,7 +28,7 @@
 
 					<h2 class="name">Name</h2><br>
 					<input type="text" ng-model="firstname" class="firstname" name="Firstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="First Name" required /><br>
-					<input type="text" ng-model="middlename" class="middlename" name="Middlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Middle Name" required /><br>
+					<input type="text" ng-model="middlename" class="middlename" name="Middlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Middle Name" /><br>
 					<input type="text" ng-model="lastname" class="lastname" name="Lastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Last Name" required /><br><br>
 					
 					<!-- Family -->
@@ -42,7 +42,7 @@
                 		<option value="Er.">Er.</option>
         			</select><br>
 					<input type="text" ng-model="fatherfirstname" class="father-firstname" name="Fatherfirstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's First Name" required /><br>
-					<input type="text" ng-model="fathermiddlename" class="father-middlename" name="Fathermiddlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's Middle Name" required /><br>
+					<input type="text" ng-model="fathermiddlename" class="father-middlename" name="Fathermiddlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's Middle Name" /><br>
 					<input type="text" ng-model="fatherlastname" class="father-lastname" name="Fatherlastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Father's Last Name" required /><br><br>
 					<h2 class="name">Mother Name Details</h2><br>
 					<select name="Motherprefix" class="prefix2" ng-model="prefix2" required >
@@ -52,7 +52,7 @@
                 		<option value="Er.">Er.</option>
         			</select><br>
 					<input type="text" ng-model="motherfirstname" class="mother-firstname" name="Motherfirstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's First Name" required /><br>
-					<input type="text" ng-model="mothermiddlename" class="mother-middlename" name="Mothermiddlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's Middle Name" required /><br>
+					<input type="text" ng-model="mothermiddlename" class="mother-middlename" name="Mothermiddlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's Middle Name" /><br>
 					<input type="text" ng-model="motherlastname" class="mother-lastname" name="Motherlastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother's Last Name" required /><br><br>	
 					
 					<!-- Personal Details -->

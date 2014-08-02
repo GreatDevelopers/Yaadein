@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 02, 2014 at 01:47 AM
+-- Generation Time: Aug 02, 2014 at 05:42 PM
 -- Server version: 5.5.37
 -- PHP Version: 5.3.10-1ubuntu3.13
 
@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   `universityrollno` int(20) NOT NULL,
   `comment` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=53 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
 
 --
 -- Dumping data for table `student`
