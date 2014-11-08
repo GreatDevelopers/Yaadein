@@ -4,8 +4,7 @@
 */
 class Form extends CI_Controller {
 
-    function __construct()
-    {
+    function __construct() {
         parent::__construct();
         $this->load->helper(array('form', 'url'));
     }
@@ -50,7 +49,8 @@ class Form extends CI_Controller {
         $config['allowed_types'] = 'gif|jpg|JPG|jpeg|png';
 
         $this->load->library('upload', $config);
-        $this->upload->initialize($config); 
+        $this->upload->initialize($config);
+         
         if ( ! $this->upload->do_upload() && $this->form_validation->run() == FALSE) {
             $error = array('error' => $this->upload->display_errors());
             $this->load->view('Form/form', $error);

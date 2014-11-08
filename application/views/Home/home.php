@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container" id="main_container">	
-	<!-- Background animated video -->
+	<!-- Background video -->
 	<video class="video-triangle" autoplay="true" loop width="100%" video="100%" style="width:100%, height:100%">
 		<source src="<?php echo base_url();?>application/views/Home/Animation/video.ogv">
 		<source src="<?php echo base_url();?>application/views/Home/Animation/video.mp4">
@@ -41,12 +41,11 @@
 <!-- Slide 1 Over -->
 
 <!-- Slide 2 -->
-<div class="slide2 wrap">
-	<div class="transparent">	
-		<div class="text2">
-			<p class="slide2-description">No matter how far you are,<br><br>Yaadein brings you closer</p>
-		</div>		
-	</div>
+<div class="slide2">
+	<section class="s2sec">
+		<div class="slide2img"></dvi>
+		<p class="slide2-description">No matter how far you are,<br><br>Yaadein brings you closer</p>
+	</section>
 </div>
 <!-- Slide 2 over -->
 

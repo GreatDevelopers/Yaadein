@@ -14,7 +14,7 @@
 @mixin breakpoint($point) {
     @if $point == small {
         @media  only screen
-            and (max-width: 600px)  { @content; }
+            and (max-width: 640px)  { @content; }
 }
 @else if $point == medium {
     @media only screen
@@ -97,7 +97,7 @@ body {
     position:absolute;
     box-shadow: 0px 2px 3px $lessblack;
     @include breakpoint(small) { position:absolute;}
-    @include single-box-shadow($lessblack,0px,2px,3px);
+    // @include single-box-shadow($lessblack,0px,2px,3px);
 }
 
 /**** Header End *****/
@@ -194,40 +194,39 @@ body {
         text-align:center;
         font-size:10rem;
     }
-    .image {
-        float: right;
-        width: 50%;
-        height: 70%;
-        margin-top: 14rem;
-        background-image: url(tasveer/Yaadein.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        @include breakpoint(medium){background-size: contain; margin-top: 23rem;}
-        @include breakpoint(small){background-size: contain; margin-top: 24rem;}
-    }    
+    // .image {
+    //     float: right;
+    //     width: 50%;
+    //     height: 70%;
+    //     margin-top: 14rem;
+    //     background-image: url(tasveer/Yaadein.png);
+    //     background-repeat: no-repeat;
+    //     background-size: contain;
+    //     @include breakpoint(medium){background-size: contain; margin-top: 23rem;}
+    //     @include breakpoint(small){background-size: contain; margin-top: 24rem;}
+    // }    
 }
 /*************** SLIDE 1 OVER **************/
 
 /**************** SLIDE 2 ******************/
 
-// .wrap{
-//     max-width: 1240px;
-//     margin: auto;
-// }
-
 .slide2 {
     height:100%;
     border-bottom:1px dashed $black;
-    
-    .text2 {
-        width: 100%;
-        height:100%;
-        opacity: 1;
-        background: url(tasveer/slide2_2.jpg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        position: absolute;            
-        
+    .s2sec {
+        display : block;
+        width : auto;
+        height: 100%;
+        overflow : hidden;         
+        .slide2img {
+            width  : 100%;
+            height : 100%;
+            background: url(tasveer/slide2_2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            @include breakpoint(small){background-image:url(tasveer/slide2_2.jpg); background-size: 100% 100%;}                   
+        }    
         .slide2-description {
             width: 100%;
             height: 100%;
@@ -240,7 +239,7 @@ body {
             @include breakpoint(medium){padding-top: 9rem; font-size: 45px;}
             @include breakpoint(small){padding-top: 2em; font-size: 34px;}            
         }
-    }
+    }  
 }
 
 
