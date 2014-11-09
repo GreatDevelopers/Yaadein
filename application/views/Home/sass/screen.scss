@@ -219,13 +219,11 @@ body {
         height: 100%;
         overflow : hidden;         
         .slide2img {
-            width  : 100%;
-            height : 100%;
-            background: url(tasveer/slide2_2.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: relative;
-            @include breakpoint(small){background-image:url(tasveer/slide2_2.jpg); background-size: 100% 100%;}                   
+            max-width: 100%;
+            height: auto;
+            display: block;   
+            background: url(tasveer/slide2_2.jpg) no-repeat;
+            background-size: 100%;                
         }    
         .slide2-description {
             width: 100%;
