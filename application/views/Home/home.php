@@ -157,7 +157,7 @@
 	<!-- Picture -->
 	<div class="picture">
        	<div class="picture-text">
-       		<h3>Our Amalgam</h3>
+       		<h3>Our Alma Mater</h3>
        		<h3>Our Pride</h3>
         </div>
     </div>

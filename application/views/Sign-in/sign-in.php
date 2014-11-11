@@ -1,3 +1,8 @@
+<!-- Sign.php
+	This is main home page. Sass is used for css and it is in 
+	application/views/Home/stylesheets/screen.sass and changes
+	are made in screen.css
+-->
 <html>
 <head>
 	<title>Sign-In</title>
@@ -8,29 +13,28 @@
 	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script>
 </head>
 <body>
-	<!-- Animated video -->
-	<video class="video-triangle" autoplay="true" loop width="100%" video="100%" style="width:100%, height:100%">
-		<source src="<?php echo base_url();?>application/views/Home/Animation/video.ogv">
-		<source src="<?php echo base_url();?>application/views/Home/Animation/video.mp4">
-		<source src="<?php echo base_url();?>application/views/Home/Animation/video.webm">
-	</video>
-	<div class="container">
-		<div class="signin">		
-			<h1 class="heading1">Sign In</h1>
-			 <?php echo validation_errors(); ?> 
-			<form class="form" method="post" action="<?php echo base_url();?>index.php/signIn/verify">
-				<div class="area">
-					<input type="email" name="email" id ="email" placeholder="E-mail" title="Email Address" required />
-				</div>
-				<div class="area">
-					<input type="password" name="password" id="password" placeholder="Password" title="Password" required>
-				</div>
-				<input type="submit" value="Login"><br>
-			</form>
-			<div class="footer">
-				<p class="p1">New Here?&nbsp;<a href="<?php echo base_url();?>index.php/registration">Sign Up</a></p>
+	<div class="container signin">
+		<header class="header">
+			<h1 class="heading1">Sign-In</h1>
+		</header>
+		<div class="s_data shrink">
+            <div class="content_signIn id_first-slide-text">
+				<?php echo validation_errors('<div class="error">', '</div>'); ?> 
+				<form class="signin" method="post" accept-charset="utf-8" action="<?php echo base_url();?>index.php/signIn/verify">
+					<input type="email" class="E_Mail" name="email" id ="email" placeholder="E-mail" title="Email Address" required />
+					<input type="password" class="pass" name="password" id="password" placeholder="Password" title="Password" required><br><br>
+					<p style="text-align: center;"><input type='submit' class="submit" value='Sign-In'/></p>
+					<p class="forget"><a href="<?php echo base_url();?>index.php/forgotPassword"><span class="span">Forgot Password?</span></a></p>
+					<p class="p1">New Here?&nbsp;<a href="<?php echo base_url();?>index.php/registration"><span class="span">Sign Up</span></a></p>
+					
+				</form>
 			</div>
-  			<p class="forget"><a href="<?php echo base_url();?>index.php/forgotPassword">Forget Password?</a></p>
+<!-- 			<div class="keepCalm iris">
+				<img src="<?php echo base_url();?>application/views/Register/stylesheets/tasveer/crown1.png">
+				<p class="p">Keep<br>Calm<br>And<br>Register</p>
+			</div> -->
+	        <div style="clear:both;">
+	       	</div>			
 		</div>
 	</div>	
 </body>

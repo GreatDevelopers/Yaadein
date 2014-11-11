@@ -306,7 +306,7 @@ body {
   height: auto;
   display: block;
   background: url(tasveer/slide2_2.jpg) no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 /* line 228, ../sass/screen.scss */
 .slide2 .s2sec .slide2-description {
