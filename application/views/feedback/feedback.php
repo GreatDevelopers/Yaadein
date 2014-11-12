@@ -30,10 +30,11 @@
 					<p style="text-align: center;"><input type='submit' class="submit" value='Submit'/></p>
 				</form>	
             </div>
-            <div class="keepCalm iris">
+            <!-- Uncomment below line for keep calm effect -->
+            <!-- <div class="keepCalm iris">
             	<img src="<?php echo base_url();?>application/views/Register/stylesheets/tasveer/crown1.png">
             	<p class="p">Keep<br>Calm<br>Give<br>Feedback</p>
-            </div>
+            </div> -->
             <div style="clear:both;">
            	</div>
        	</div>
