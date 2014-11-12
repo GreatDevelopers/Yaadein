@@ -5,7 +5,7 @@ class Feedback_model extends CI_Model {
         $this->load->database();
 
         $data = array(
-            'name' => $this->input->post('Username'),
+            'name' => $this->input->post('Name'),
             'email' => $this->input->post('Email'),
             'comment' =>  $this->input->post('Comment')
         );

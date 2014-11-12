@@ -1,46 +1,45 @@
-<!-- feedback.php
-        This is main home page. Sass is used for css and it is in 
-        application/views/Feedback/stylesheets/screen.sass and changes
-        are made in screen.css
+<!-- Register.php
+	This is main home page. Sass is used for css and it is in 
+	application/views/Home/stylesheets/screen.sass and changes
+	are made in screen.css
 -->
 <html>
 <head>
-    <title>Feedback</title>
-    <link href="<?php echo base_url();?>application/views/feedback/stylesheets/screen.css" media="screen,projection" rel="stylesheet" type="text/css">
-</head>
+	<title>Register</title>	
+	<meta charset="utf-8"> <!-- Character set -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="<?php echo base_url();?>application/views/Register/stylesheets/screen.css" media="screen,projection" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>application/views/Home/stylesheets/mobileView.css" />
+	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script></head>
 <body>
-    <video  class="video-triangle" autoplay="true" loop width="100%" video="100%" style="width:100%, height:100%">
-        <source src="<?php echo base_url();?>application/views/Home/Animation/video.ogv">
-        <source src="<?php echo base_url();?>application/views/Home/Animation/video.mp4">
-    </video>
-
-<!-- Validations Codeigniter  -->
+<!-- Validations Codeigniter  -->	
 <?php echo form_open(); ?>
 <!-- Valdiations Over -->
-<div class="container">
-   <div class="line">
-       <h1 class="lineheading">Would like your</h1>
-   </div>
-    <div class="fb1"><h1>F</h1></div>
-    <div class="fb2"><h1>E</h1></div>
-    <div class="fb3"><h1>E</h1></div>
-    <div class="fb4"><h1>D</h1></div>
-    <div class="fb5"><h1>B<h1></div>
-    <div class="fb6"><h1>A</h1></div>
-    <div class="fb7"><h1>C</h1></div>
-    <div class="fb8"><h1>K</h1></div>
-    <div class="form-div">
-        <form   action="<?php echo base_url();?>index.php/feedback" method="post">
-            <input name="Username" type="text" placeholder="Name" pattern="[a-zA-Z\s]+" title="Characters Only." class="name" required/>
-            <input name="Email" type="email" class="email" placeholder="Email" title="Please Fill Valid Email Address" required/>
-            <textarea name="Comment" type="text" class="comment" placeholder="Comment" title="Max 300words."required/></textarea>
-            <div class="submit">
-                <input type="submit" value="SEND" class="button-blue"/>
-            </div>
-        </form>
-    </div>
-</div>
-</body>
-</html>
-         
+	<div class="container register">
+		<header class="header">
+			<h1 class="heading1">Your Feedback</h1>
+		</header>
+        <div class="s_data shrink">
+            <div class="content id_first-slide-text">
+            	<form class="register" method="post" accept-charset="utf-8" action="<?php echo base_url();?>index.php/feedback">
+					<?php echo validation_errors('<div class="error">', '</div>'); ?>
+					<input type="text" class="name" name="Name"  pattern="[a-zA-Z\s]+" title="Optional" placeholder="Name" /><br>
+					<input type="email" class="eMail" name="Email" placeholder="E-mail" title="Optional"  /><br>
+					<input type="text" class="name" name="Comment"  placeholder="Comment" title="Max 300 words" required /><br><br><br><br>
 
+					<p style="text-align: center;"><input type='submit' class="submit" value='Submit'/></p>
+				</form>	
+            </div>
+            <div class="keepCalm iris">
+            	<img src="<?php echo base_url();?>application/views/Register/stylesheets/tasveer/crown1.png">
+            	<p class="p">Keep<br>Calm<br>Give<br>Feedback</p>
+            </div>
+            <div style="clear:both;">
+           	</div>
+       	</div>
+    </div>
+</body>
+<!-- Script files for mobile view  -->
+<script src="<?php echo base_url();?>application/views/Home/js/classie.js"></script>
+<script src="<?php echo base_url();?>application/views/Home/js/borderMenu.js"></script>
+</html>
