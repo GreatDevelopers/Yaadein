@@ -1,0 +1,6 @@
+cd /var/www/html/Yaad/Yaadein/uploads/activity_images/resized
+for file in *.png; 
+do echo $file; 
+sam2p $file ${file%.*}.eps; 
+done
+

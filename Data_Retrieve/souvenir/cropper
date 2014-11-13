@@ -1,0 +1,5 @@
+cd /var/www/html/Yaad/Yaadein/uploads/activity_images/resized
+for file in *.png;
+do echo $file;
+convert $file -gravity center -crop 400x600+0+0  ${file%.*}.png;
+done

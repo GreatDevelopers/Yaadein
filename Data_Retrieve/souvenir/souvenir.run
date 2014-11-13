@@ -1,0 +1,15 @@
+php mechanical.php > filemechanical.tex
+php civil.php > filecivil.tex
+php it.php > fileit.tex
+php electrical.php > fileelectrical.tex
+php electronics.php > fileelectronics.tex
+php computer.php > filecomputer.tex
+php production.php > fileproduction.tex
+php mba.php > filemba.tex
+
+
+
+
+
+
+
