@@ -130,23 +130,7 @@
 					<p>Core Developer<br>&<br>LaTeX Developer</p>
 				</div>
 			</div>
-		</li>
-		<li>
-			<div class="teams image4">
-				<div class="description">
-					<h3>Ravina Singla</h3>
-					<p>UI Developer<br>&<br>LaTeX Developer</p>
-				</div>
-			</div>
-		</li>
-		<li>
-			<div class="teams image5">
-				<div class="description">
-					<h3>Kaushalendra Dubey</h3>
-					<p>LaTeX Developer</p>
-				</div>
-			</div>
-		</li>							
+		</li>						
 		</ul>
        	<div style="clear:both;">
         </div>

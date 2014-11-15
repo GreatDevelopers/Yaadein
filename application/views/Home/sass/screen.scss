@@ -314,8 +314,7 @@ body {
 /************** SLIDE 4  ***************/
 
 .slide4 {
-    height:auto;
-    border-bottom:1px dashed $black;
+    height:100%;
     @include breakpoint(small){background-image:url(tasveer/black.jpg); width: 100%; height:auto;}
     @include breakpoint(medium){background-image:url(tasveer/black.jpg); width: 100%; height:auto;}
 
@@ -381,25 +380,11 @@ body {
     .image2 { 
         background-image: url(tasveer/dk1.JPG);
         background-size: cover;
-        // @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image3 { 
         background-image: url(tasveer/satwant.JPG);
         background-size: cover;
-        // @include breakpoint(medium){background-size: 217px 239px;}
-    }
-
-    .image4 { 
-        background-image: url(tasveer/ravina.jpg);
-        background-size: cover;
-        // @include breakpoint(medium){background-size: 217px 239px;}
-    }
-
-    .image5 { 
-        background-image: url(tasveer/dubey.jpg);
-        background-size: cover;
-        // @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .description {
@@ -416,7 +401,6 @@ body {
 
     .description h3 {
         color: #fff;
-        // text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 22px;
         margin: 10px 30px;
@@ -474,7 +458,6 @@ body {
 
 .slide5 {
     height:100%;
-    // border-bottom:1px dashed $black;
     h3 {
         margin-top: 6rem;
         font-size: 9.5rem;
@@ -483,15 +466,15 @@ body {
         text-align: center;
         color: $darkblue;
         text-shadow: 4px 4px 4px $white;
-        @include breakpoint(medium){font-size: 8rem; margin-top: 7.5rem;}
-        @include breakpoint(small){font-size: 6rem; margin-top: 10.5rem;}
+        @include breakpoint(medium){font-size: 8rem; margin-top: 6.5rem;}
+        @include breakpoint(small){font-size: 5rem; margin-top: 5.5rem;}
     }            
     
     .picture {
         width:100%;
         height:100%;
         background:url(tasveer/gne2.jpg);
-        background-size: cover;
+        @include background-size(cover);
         background-attachment:fixed;
         background-repeat:no-repeat;
         border-bottom:1px dashed $black;
@@ -499,7 +482,7 @@ body {
         .picture-text {
             padding-top:110px;
             width:100%;
-            height:auto;
+            height:50%;
         }
     }
 
