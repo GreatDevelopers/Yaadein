@@ -25,5 +25,10 @@
   * Feedback Form
     * Inside application / models / forgot_model.php set E-mail and Password
 
+## Run
+ * To generate the Souvenir pdf, go to Yaadein/Data_Retrieve/souvenir and run script.sh using the command:
+    $ sh script.sh
+ * A pdf file named final.pdf will be generated. The file can be viewed as:
+ *  $ evince final.pdf
 ## Graph
 [![Throughput Graph](https://graphs.waffle.io/GreatDevelopers/Yaadein/throughput.svg)](https://waffle.io/GreatDevelopers/Yaadein/metrics) 
