@@ -27,7 +27,7 @@
 
 ## Run
  * To generate the Souvenir pdf, go to Yaadein/ Data_Retrieve/ souvenir.
- * Run the following command:< br/>
+ * Run the following command:<br/>
     $ sh script.sh
  * A pdf file named final.pdf will be generated. The file can be viewed as:
  *  $ evince final.pdf
