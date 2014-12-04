@@ -30,5 +30,6 @@
     $ sh script.sh
  * A pdf file named final.pdf will be generated. The file can be viewed as:
  *  $ evince final.pdf
+ 
 ## Graph
 [![Throughput Graph](https://graphs.waffle.io/GreatDevelopers/Yaadein/throughput.svg)](https://waffle.io/GreatDevelopers/Yaadein/metrics) 
