@@ -16,7 +16,7 @@ class Email_model extends CI_Model {
 			
 		$this->load->library('email', $config);
 		$this->email->set_newline("\r\n");
-		$this->email->from('', "Team Souvenir");
+		$this->email->from('Souvenir', "Team Souvenir");
 		$this->email->to($email);		
 		$this->email->subject("Yaadein Email Verification");
 		$this->email->message("<a href=\"".base_url()."index.php/registration/verifyEmailAddress/".$verificationText."\">Click here</a> to confirm registration.<br/><br/>Thanks <br/><br/>The Souvenir Team");
@@ -38,7 +38,7 @@ class Email_model extends CI_Model {
 
         $this->load->library('email', $config);
         $this->email->set_newline("\r\n");
-        $this->email->from('', "Team Souvenir");
+        $this->email->from('Souvenir', "Team Souvenir");
         $this->email->to($email);
         $this->email->subject("Yaadein Feedback Verification");
         $this->email->message("Your feedback has been successfully recorded");

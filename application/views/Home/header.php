@@ -18,7 +18,14 @@
 		<nav class="navbar" id="main_nav">
 		<ul class="unlist" id="unoderedlist">
 			<li><a href="<?php echo base_url();?>index.php/home">Home</a></li>
-			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
+			<?php if(isset($name)) {?>
+                        <li><a href="#">Gallery</a></li>
+                        <?php } else {
+                        ?>
+                        <li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
+                        <?php }?>
+
+
 			<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
 
 			<?php if(isset($name)) {?>
@@ -41,7 +48,13 @@
 		<a href="#" class="bt-menu-trigger"><span>Menu</span></a>	
 		<ul class="unlist1">
 			<li><a href="<?php echo base_url();?>index.php/home">Home</a></li>
-			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
+                        <?php if(isset($name)) {?>
+                        <li><a href="#">Gallery</a></li>
+                        <?php } else {
+                        ?>
+                        <li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
+                        <?php }?>
+
 			<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
 
 			<?php if(isset($name)) {?>
